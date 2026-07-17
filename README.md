@@ -2,20 +2,20 @@
 
 Manage, analyze, and optimize your ad campaigns across 7 platforms through natural language in Claude Code and Claude Desktop.
 
-**115 expert skills** · **35 workflow commands** · **5 specialized agents** · **33 MCP tools**
+**120 expert skills** · **35 slash commands** (29 workflow, 6 utility) · **5 specialized agents** · **40 MCP tools**
 
 ## Platforms
 
 | Platform | Skills | MCP Tools | What you can do |
 |----------|-------:|----------:|------------------|
-| **Meta Ads** | 23 | 9 | Campaign management, creative fatigue analysis, audience targeting, ad creation, budget optimization |
+| **Meta Ads** | 26 | 12 | Campaign management, creative fatigue analysis, audience targeting, ad creation, budget optimization |
 | **Google Ads** | 32 | 4 | GAQL queries, Performance Max, keyword strategy, bid optimization, campaign creation |
 | **Google Analytics 4** | 18 | 2 | Event tracking, attribution models, audience building, ecommerce analysis |
 | **Google Search Console** | 2 | 3 | SEO performance, keyword rankings, indexing diagnostics, sitemap management |
-| **Google Tag Manager** | · | 3 | Container auditing, consent mode, server-side tagging, conversion setup |
+| **Google Tag Manager** | 4 | 4 | Container auditing, consent mode, server-side tagging, conversion setup |
 | **LinkedIn Ads** | 11 | 4 | B2B lead gen, ABM targeting, revenue attribution, Thought Leader Ads, CTV |
-| **TikTok Ads** | 10 | 6 | Creative fatigue, video performance, Smart+ campaigns, Search Ads, Shop |
-| **Cross-platform** | 19 | 2 | Unified `workflow` + `skill` tools; attribution reconciliation, SEO vs SEA gaps, budget allocation, competitive analysis |
+| **TikTok Ads** | 10 | 7 | Creative fatigue, video performance, Smart+ campaigns, Search Ads, Shop |
+| **Cross-platform** | 17 | 4 | Unified `workflow`, `skill`, `clients`, and `clients_update` tools; client profiles, attribution reconciliation, SEO vs SEA gaps, budget allocation, competitive analysis |
 
 ## Install
 
@@ -32,7 +32,7 @@ Add the marketplace once, then install the plugin:
 /plugin install ad-superpowers@ad-superpowers
 ```
 
-That's it. The MCP server, all 115 skills, 35 workflow commands, 5 agents, and safety confirmations are bundled.
+That's it. The MCP server, all 120 skills, 35 slash commands, 5 agents, and safety confirmations are bundled.
 
 ### Cowork (Claude Desktop's agentic coding mode)
 
@@ -140,9 +140,9 @@ This is consistent with other known Cowork plugin-loading issues tracked upstrea
 
 **What works in Cowork today:** Everything except `Agent()` dispatch.
 
-* All 115 skills load and auto-invoke on relevant questions
-* All 35 workflow commands are discoverable and runnable
-* All 33 MCP tools are callable from the main conversation
+* All 120 skills load and auto-invoke on relevant questions
+* All 35 slash commands are discoverable and runnable
+* All 40 MCP tools are callable from the main conversation
 * All write operations (create campaign, duplicate ad, update budget) work
 * The agents' **prompts and logic** are also available as slash commands and skills — you get the same analysis, it just runs in the main context window instead of a separate subagent
 
@@ -156,9 +156,9 @@ No known limitations on 2.1.74+. All skills, commands, MCP tools, and subagents 
 
 | Component | Claude Code CLI / VSCode | Cowork (Claude Desktop) | Claude Desktop (chat, via Connector) | ChatGPT (Apps) |
 |-----------|:---:|:---:|:---:|:---:|
-| 115 skills | ✅ | ✅ | ❌ | ❌ |
+| 120 skills | ✅ | ✅ | ❌ | ❌ |
 | 35 commands | ✅ | ✅ | ❌ | ❌ |
-| 33 MCP tools | ✅ | ✅ | ✅ | ✅ |
+| 40 MCP tools | ✅ | ✅ | ✅ | ✅ |
 | 5 subagents | ✅ | ❌ (use skills instead) | ❌ | ❌ |
 
 ## Pricing

@@ -107,45 +107,18 @@ From the creative audit, identify the winning elements of the best-performing ad
 ### Step 5: Output the Creative Brief
 Synthesize Step 4 into a structured creative brief in the OUTPUT FORMAT above. **Stop here and present the brief to the user.** The user will use this brief externally (in their image tool of choice) to produce {{ num_variations | default(2) }} new image(s).
 
-Wait for the user to come back with the image(s). They have two ways to deliver each image:
-1. **Local file path** — they tell you the path (e.g., `/Users/them/Desktop/refresh-1.jpg`). Read the file and base64-encode the bytes. Verify it's ≤ 4 MB before encoding.
-2. **Public HTTPS URL** — they paste the URL. No size check needed; Meta will fetch it server-side.
+Wait for the user to come back with the image(s). Each image must be delivered as a **public HTTPS URL** (e.g., Canva export, Google Drive share link, Dropbox, S3). Meta fetches the image server-side — no base64 upload required. If the user has a local file, ask them to host it somewhere accessible first.
 
-### Step 6: Upload the New Creative(s)
-For each image the user provides:
+### Step 6: Deploy the New Creative(s)
+For each image URL the user provides, pass it directly to `meta_create_ad` — the tool handles the Meta upload internally and creates the ad in one call.
 
-**From a local file (your AI client reads it and base64-encodes):**
-```
-meta_upload_image(
-    account_id="FROM_STEP_1",
-    image_data="<base64-encoded bytes from the local file>",
-    name="refresh_<short_descriptor>_<aspect_ratio>"
-)
-```
-
-**From a public URL:**
-```
-meta_upload_image(
-    account_id="FROM_STEP_1",
-    image_url="https://example.com/path/to/image.jpg",
-    name="refresh_<short_descriptor>_<aspect_ratio>"
-)
-```
-
-Capture the returned `image_hash` for each upload — you need it for Step 7.
-
-If the file is larger than 4 MB, ask the user to either downsize it or upload it somewhere accessible (Drive/Dropbox/S3 with a public link) and re-run with `image_url`.
-
-### Step 7: Review the Uploaded Image
-Each upload returns an `image_url` (Meta CDN URL). Present this to the user for visual confirmation before deploying. Wait for their go/no-go on each image.
-
-### Step 8: Deploy to Meta (Approved Only)
-For each approved image:
+### Step 7: Deploy to Meta (Approved Only)
+For each approved image URL:
 ```
 meta_create_ad(
     account_id="FROM_STEP_1",
     adset_id="FROM_USER",
-    image_hash="FROM_STEP_6",
+    image_url="FROM_USER",
     headline="FROM_USER",
     body="FROM_USER",
     link_url="FROM_USER",
@@ -158,9 +131,9 @@ Ads are created as PAUSED for final review. Activate with `meta_update()`.
 
 ## EDGE CASES
 - **No fatigued ads:** Confirm healthy status. Still offer a proactive refresh if any ad is >10 days old.
-- **User has no image yet:** Stop at Step 5 with the creative brief. They'll come back with an image, then resume from Step 6.
-- **Local file > 4 MB:** Ask the user to downsize or upload to a public URL and re-run with `image_url`.
-- **Local file is not PNG/JPEG:** Ask the user to convert (Meta only accepts standard image formats).
-- **Meta upload fails:** The tool returns a structured error with a hint. Surface it to the user — common causes are invalid `account_id` or missing ad-creation permissions.
+- **User has no image yet:** Stop at Step 5 with the creative brief. They'll come back with an image URL, then resume from Step 6.
+- **User only has a local file:** Ask them to host it publicly (Canva export, Google Drive share link, Dropbox, S3) and provide the URL.
+- **Image is not PNG/JPEG:** Ask the user to convert (Meta only accepts standard image formats).
+- **Meta upload fails:** `meta_create_ad` returns a structured error with a hint. Surface it to the user — common causes are invalid `account_id`, an unreachable image URL, or missing ad-creation permissions.
 - **No ad sets available:** Help the user identify the right ad set via `meta_query`.
 - **All ads performing well:** Suggest A/B testing the new creative against the current winners rather than replacing them.

@@ -1,14 +1,14 @@
 # Meta Ads Naming Conventions Reference
 
-## Waarom Naming Conventions?
+## Why Naming Conventions?
 
-Goede naming conventions zorgen voor:
-- Snelle identificatie in Ads Manager
-- Makkelijke filtering en rapportage
-- Consistentie bij teamwork
-- Betere integratie met analytics tools
+Good naming conventions give you:
+- Fast identification in Ads Manager
+- Easy filtering and reporting
+- Consistency across team workflows
+- Better integration with analytics tools
 
-## Aanbevolen Structuur
+## Recommended Structure
 
 ### Campaign Level
 
@@ -16,15 +16,15 @@ Goede naming conventions zorgen voor:
 [Brand]_[Objective]_[Funnel]_[Geo]_[MMYY]
 ```
 
-| Component | Opties | Voorbeeld |
-|-----------|--------|-----------|
-| Brand | Bedrijfsnaam of afkorting | `Acme`, `ACM` |
+| Component | Options | Example |
+|-----------|---------|---------|
+| Brand | Company name or abbreviation | `Acme`, `ACM` |
 | Objective | `Conv`, `Traffic`, `Awareness`, `Leads`, `Engagement` | `Conv` |
 | Funnel | `TOFU`, `MOFU`, `BOFU`, `Retarget` | `BOFU` |
-| Geo | ISO landcode | `NL`, `BE`, `DACH` |
-| MMYY | Maand/jaar | `0126` |
+| Geo | ISO country code | `NL`, `BE`, `DACH` |
+| MMYY | Month/year | `0126` |
 
-**Voorbeeld**: `Acme_Conv_BOFU_NL_0126`
+**Example**: `Acme_Conv_BOFU_NL_0126`
 
 ### Ad Set Level
 
@@ -32,13 +32,13 @@ Goede naming conventions zorgen voor:
 [AudienceType]_[AudienceDetail]_[Placement]
 ```
 
-| Component | Opties | Voorbeeld |
-|-----------|--------|-----------|
+| Component | Options | Example |
+|-----------|---------|---------|
 | AudienceType | `LAL`, `Interest`, `Retarget`, `Broad`, `CustList` | `LAL` |
-| AudienceDetail | Specifieke beschrijving | `1pct_Purchasers` |
+| AudienceDetail | Specific description | `1pct_Purchasers` |
 | Placement | `AllPlace`, `Feed`, `Stories`, `Reels` | `AllPlace` |
 
-**Voorbeeld**: `LAL_1pct_Purchasers_AllPlace`
+**Example**: `LAL_1pct_Purchasers_AllPlace`
 
 ### Ad Level
 
@@ -46,16 +46,16 @@ Goede naming conventions zorgen voor:
 [CreativeType]_[Format]_[Version]_[Hook]
 ```
 
-| Component | Opties | Voorbeeld |
-|-----------|--------|-----------|
+| Component | Options | Example |
+|-----------|---------|---------|
 | CreativeType | `UGC`, `Studio`, `Static`, `Carousel`, `Catalog` | `UGC` |
 | Format | `Video`, `Image`, `Carousel` | `Video` |
 | Version | `v1`, `v2`, `v3` | `v2` |
 | Hook | `ProblemHook`, `BenefitHook`, `SocialProof`, `Question` | `ProblemHook` |
 
-**Voorbeeld**: `UGC_Video_v2_ProblemHook`
+**Example**: `UGC_Video_v2_ProblemHook`
 
-## Volledige Voorbeeld
+## Complete Example
 
 ```
 Campaign: Acme_Conv_BOFU_NL_0126
@@ -68,11 +68,11 @@ Campaign: Acme_Conv_BOFU_NL_0126
     └── Ad: Static_Image_v1_Urgency
 ```
 
-## Speciale Cases
+## Special Cases
 
 ### A/B Tests
 
-Voeg `_TestA` / `_TestB` toe aan campaign naam:
+Add `_TestA` / `_TestB` to the campaign name:
 ```
 Acme_Conv_BOFU_NL_0126_TestA
 Acme_Conv_BOFU_NL_0126_TestB
@@ -80,7 +80,7 @@ Acme_Conv_BOFU_NL_0126_TestB
 
 ### Seasonal Campaigns
 
-Voeg seizoen/event toe:
+Add the season or event:
 ```
 Acme_Conv_BOFU_NL_BF24  (Black Friday 2024)
 Acme_Conv_BOFU_NL_XMAS24
@@ -89,7 +89,7 @@ Acme_Conv_BOFU_NL_SUMMER25
 
 ### Multi-Product
 
-Voeg product categorie toe:
+Add the product category:
 ```
 Acme_Conv_BOFU_NL_0126_Shoes
 Acme_Conv_BOFU_NL_0126_Bags
@@ -97,7 +97,7 @@ Acme_Conv_BOFU_NL_0126_Bags
 
 ## UTM Parameters Alignment
 
-Zorg dat UTM parameters overeenkomen met naming:
+Make sure UTM parameters match the naming:
 
 ```
 utm_source=facebook
@@ -106,7 +106,7 @@ utm_campaign=Acme_Conv_BOFU_NL_0126
 utm_content=UGC_Video_v2_ProblemHook
 ```
 
-## Regex Patterns voor Validatie
+## Regex Patterns for Validation
 
 ### Campaign Name Validation
 ```regex
@@ -126,9 +126,9 @@ utm_content=UGC_Video_v2_ProblemHook
 ## Checklist
 
 - [ ] Consistent format across all campaigns
-- [ ] No spaces (gebruik underscores)
+- [ ] No spaces (use underscores)
 - [ ] No special characters
 - [ ] Date format consistent (MMYY)
-- [ ] Audience type duidelijk
-- [ ] Creative type identificeerbaar
-- [ ] Version tracking mogelijk
+- [ ] Audience type is clear
+- [ ] Creative type is identifiable
+- [ ] Version tracking is possible

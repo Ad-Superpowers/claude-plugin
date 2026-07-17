@@ -182,7 +182,6 @@ PHASE 4: HYBRID (Ongoing)
 
 ```
 tiktok_get_audiences(
-    advertiser_id="<account>",
     audience_type="custom"
 )
 ```

@@ -165,10 +165,10 @@ Identify [specify company_name]'s competitors:
 - `google_ads_run_gaql(customer_id=customer_id, query="SELECT campaign.id, campaign.name, campaign.status, metrics.impressions, metrics.clicks, metrics.ctr, metrics.average_cpc, metrics.cost_micros, metrics.conversions, metrics.conversions_value FROM campaign WHERE segments.date DURING LAST_90_DAYS ORDER BY metrics.cost_micros DESC")`
 
 **LinkedIn Ads:**
-- `linkedin_get_analytics(account_id=account_id, start_date="90 days ago", end_date="today", time_granularity="MONTHLY")`
+- `linkedin_get_analytics(account_id=account_id, date_range="last 90 days", time_granularity="MONTHLY")`
 
 **TikTok Ads:**
-- `tiktok_get_report(start_date="90 days ago", end_date="today", level="campaign")`
+- `tiktok_get_report(date_range="last 90 days", level="campaign")`
 
 **GA4 (traffic context):**
 - `ga4_run_report(property_id=property_id, metrics=["sessions", "totalUsers", "newUsers"], dimensions=["sessionDefaultChannelGrouping"], start_date="90daysAgo", end_date="today")`

@@ -129,8 +129,8 @@ RECOMMENDATIONS PER ASSET GROUP:
 +-- Count: 3-7 themes per asset group
 +-- Type: Mix of broad and specific
 +-- Negative keywords: Campaign-level negatives ARE supported (v20+ feature)
-+--   Apply via google_ads_mutate (campaign_criterion with negative=true)
-+--   Account-level negative keyword lists also apply to PMax
++--   Apply via google_ads_mutate with a campaign_criterion operation
++--   marked as negative. Account-level negative lists apply to PMax too.
 
 EXAMPLE (Fashion E-commerce):
 Asset Group: Winter Jackets
@@ -421,7 +421,8 @@ PMAX RECENT UPDATES (IMPORTANT FOR OPTIMIZATION)
 
 v20 (2024): Campaign-level negative keywords
 +-- PMax now supports negative keywords at campaign level
-+-- Apply via: google_ads_mutate (campaign_criterion, negative=true)
++-- Apply via google_ads_mutate using a campaign_criterion operation
++--   with the negative flag set to true (pass as part of operations list)
 +-- Account-level shared negative keyword lists also apply
 
 v21 (2025): Search term reporting + Smart Bidding Exploration

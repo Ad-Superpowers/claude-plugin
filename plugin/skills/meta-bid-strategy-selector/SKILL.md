@@ -345,6 +345,21 @@ Post-Migration:
 □ Document learnings
 ```
 
+## How this maps to our MCP tools today
+
+The strategy names above map to these API values, and `meta_create` has defaults worth knowing before you set anything:
+
+| This guide's name | API `bid_strategy` value | Needs a number? |
+|-------------------|--------------------------|-----------------|
+| Lowest Cost (Highest Volume) | `LOWEST_COST_WITHOUT_CAP` | no |
+| Cost Cap | `COST_CAP` | `bid_amount` (ad set) |
+| Bid Cap | `LOWEST_COST_WITH_BID_CAP` | `bid_amount` (ad set) |
+| ROAS Goal | `LOWEST_COST_WITH_MIN_ROAS` | ROAS target — not settable via `meta_create` yet |
+
+- **`meta_create` defaults a new campaign to `LOWEST_COST_WITHOUT_CAP`.** You only pass `bid_strategy` to override it, and that default is why ad sets do not need a `bid_amount`.
+- **A campaign budget is always required**, so every campaign created via the tool is CBO. The cap/target strategies put their `bid_amount` on the **ad set**.
+- For the full launch sequence (campaign → ad set → ads), `use ad-launch-playbook`.
+
 ## MCP: Check Current Bid Strategy & Performance
 
 ```python

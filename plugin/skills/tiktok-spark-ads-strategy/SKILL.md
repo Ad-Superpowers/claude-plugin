@@ -380,7 +380,7 @@ tiktok_query(
 )
 
 tiktok_get_ads_with_creatives(
-    campaign_id="<campaign_id>"
+    campaign_ids=["<campaign_id>"]
 )
 ```
 

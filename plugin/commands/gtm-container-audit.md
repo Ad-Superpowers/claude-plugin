@@ -83,7 +83,7 @@ Audit container: [specify container_id]
 ### Step 2: Run deep audit
 For each container to audit:
 ```
-gtm_audit(container_id="CONTAINER_ID")
+gtm_audit(container_path="CONTAINER_ID")
 ```
 This returns the full container state: all tags, triggers, variables, workspaces, and their relationships.
 

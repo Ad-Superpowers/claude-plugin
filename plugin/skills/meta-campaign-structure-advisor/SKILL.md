@@ -19,6 +19,14 @@ Framework for setting up and optimizing Meta Ads account structures using the 4-
 
 **Simplification = Better Performance.** Accounts with 2-4 campaigns perform 32% better on CPA than fragmented structures.
 
+## How this maps to our MCP tools today
+
+Before applying the structures below, know what `meta_create` actually does today:
+
+- **Campaign creation always requires a budget**, so every campaign created via the tool is **CBO** (the budget lives on the campaign). Per-ad-set budgets (ABO) are not creatable through the tool yet — model ABO splits in Ads Manager if you need them.
+- **Under CBO, ad sets must not carry their own budget** — omit it; they share the campaign budget.
+- The funnel below is the strategy; for the click-by-click create sequence (campaign → ad set → ads), `use ad-launch-playbook`.
+
 ## 4-Tier Funnel Structure
 
 | Tier | Campaign Type | Budget | Goal |

@@ -93,8 +93,7 @@ google_ads_run_gaql(
 **TikTok Ads:**
 ```
 tiktok_get_report(
-    start_date="7 days ago",
-    end_date="today",
+    date_range="last 7 days",
     level="campaign",
     metrics=["spend", "impressions", "clicks", "conversions", "cpc", "cpm", "ctr", "conversion_rate"]
 )
@@ -104,8 +103,7 @@ tiktok_get_report(
 ```
 linkedin_get_analytics(
     account_id=account_id,
-    start_date="7 days ago",
-    end_date="today",
+    date_range="last 7 days",
     time_granularity="ALL",
     fields=["impressions", "clicks", "costInLocalCurrency", "externalWebsiteConversions"]
 )

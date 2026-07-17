@@ -13,6 +13,8 @@ description: |
 
 This skill helps optimize Meta Product Catalogs for maximum Advantage+ Catalog Ads and Advantage+ Sales performance, including feed optimization, product set strategies, and troubleshooting of common issues.
 
+> **Heads-up — catalog ads are not creatable through MCP yet.** The AdSuperpowers catalog tools are read-only (`meta_catalog_query` for catalogs, product sets, and product-set items). There is no tool to create a catalog / Advantage+ catalog ad. Use this skill for feed and product-set **strategy and diagnosis**, then build the catalog ad in Ads Manager. For non-catalog ad creation via MCP, `use ad-launch-playbook`.
+
 ## Catalog Fundamentals
 
 ### Catalog Ecosystem

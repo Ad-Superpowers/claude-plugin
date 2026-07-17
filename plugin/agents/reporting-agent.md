@@ -53,7 +53,7 @@ Transform raw advertising data into insightful, well-formatted reports that high
 
 ## Using skills
 
-This plugin ships 115 expert skills that Claude Code loads progressively. Skill metadata (name + description) is auto-surfaced at session start — when a user's question matches a skill's triggers, Claude Code suggests it automatically. To load the full skill content on demand, use the built-in `Skill` tool with the fully-qualified name:
+This plugin ships 120 expert skills that Claude Code loads progressively. Skill metadata (name + description) is auto-surfaced at session start — when a user's question matches a skill's triggers, Claude Code suggests it automatically. To load the full skill content on demand, use the built-in `Skill` tool with the fully-qualified name:
 
 ```
 Skill(skill="ad-superpowers:meta-benchmark-database")
