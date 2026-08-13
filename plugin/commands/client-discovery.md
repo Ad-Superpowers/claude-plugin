@@ -1,5 +1,5 @@
 ---
-description: Comprehensive client research combining deep research with optional ad account analysis. Gathers company intel, competitive landscape, and advertising history in one structured workflow. (requires Pro subscription)
+description: "Comprehensive client research combining deep research with optional ad account analysis. Gathers company intel, competitive landscape, and advertising history in one structured workflow. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -128,13 +128,13 @@ Use web search and crawling tools to gather company intelligence:
 - Company size, founding date, leadership, recent news
 - Funding history (if startup/private)
 
+> Conditional: if company_website
 Crawl [specify company_website] to extract:
 - Value proposition (homepage hero)
 - Products/services structure
 - Target audience signals (language, imagery)
 - Trust signals (testimonials, certifications, press)
 - Conversion points (CTAs, forms, pricing)
-
 
 ### Step 2: Analyze Digital Presence
 
@@ -155,7 +155,8 @@ Identify [specify company_name]'s competitors:
 
 ### Step 4: Gather Platform Data (if connected)
 
-{% if research_depth in ["standard", "comprehensive"] %}For each connected platform, gather 90-day performance:
+> Conditional: if research_depth in ["standard", "comprehensive"]
+For each connected platform, gather 90-day performance:
 
 **Meta Ads:**
 - `meta_get_insights(account_id=account_id, date_preset="last_90d", level="account", fields=["spend", "impressions", "clicks", "actions", "action_values", "purchase_roas"])`
@@ -172,7 +173,6 @@ Identify [specify company_name]'s competitors:
 
 **GA4 (traffic context):**
 - `ga4_run_report(property_id=property_id, metrics=["sessions", "totalUsers", "newUsers"], dimensions=["sessionDefaultChannelGrouping"], start_date="90daysAgo", end_date="today")`
-
 
 ### Step 5: Synthesize Findings
 

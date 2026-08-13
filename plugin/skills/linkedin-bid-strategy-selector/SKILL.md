@@ -1,10 +1,6 @@
 ---
 name: linkedin-bid-strategy-selector
-description: |
-  This skill should be used when the user asks to "optimize LinkedIn bid strategy",
-  "choose between Maximum Delivery and Manual Bidding", "set up LinkedIn Cost Cap",
-  "reduce LinkedIn CPC", or mentions "LinkedIn CPL too high" or "LinkedIn budget pacing".
-  Do NOT use for: LinkedIn benchmark lookups (use benchmark-database), LinkedIn lead gen form optimization (use linkedin-lead-gen-optimizer), LinkedIn performance troubleshooting (use linkedin-performance-troubleshooter).
+description: "This skill should be used when the user asks to \"optimize LinkedIn bid strategy\", \"choose between Maximum Delivery and Manual Bidding\", \"set up LinkedIn Cost Cap\", \"reduce LinkedIn CPC\", or mentions \"LinkedIn CPL too high\" or \"LinkedIn budget pacing\". Do NOT use for: LinkedIn benchmark lookups (use benchmark-database), LinkedIn lead gen form optimization (use linkedin-lead-gen-optimizer), LinkedIn performance troubleshooting (use linkedin-performance-troubleshooter)."
 ---
 # LinkedIn Bid Strategy Selector
 

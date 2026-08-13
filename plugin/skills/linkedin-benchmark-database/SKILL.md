@@ -1,10 +1,6 @@
 ---
 name: linkedin-benchmark-database
-description: |
-  This skill should be used when the user asks to "look up LinkedIn benchmarks",
-  "compare LinkedIn CPL to industry average", "set LinkedIn KPI targets", or mentions
-  "is my LinkedIn CTR good", "LinkedIn CPC benchmark", or "B2B ad performance standards".
-  Do NOT use for: LinkedIn bid strategy selection (use linkedin-bid-strategy-selector), LinkedIn lead gen optimization (use linkedin-lead-gen-optimizer), LinkedIn performance troubleshooting (use linkedin-performance-troubleshooter).
+description: "This skill should be used when the user asks to \"look up LinkedIn benchmarks\", \"compare LinkedIn CPL to industry average\", \"set LinkedIn KPI targets\", or mentions \"is my LinkedIn CTR good\", \"LinkedIn CPC benchmark\", or \"B2B ad performance standards\". Do NOT use for: LinkedIn bid strategy selection (use linkedin-bid-strategy-selector), LinkedIn lead gen optimization (use linkedin-lead-gen-optimizer), LinkedIn performance troubleshooting (use linkedin-performance-troubleshooter)."
 ---
 # LinkedIn Ads Benchmark Database
 

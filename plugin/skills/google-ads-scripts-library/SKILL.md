@@ -1,11 +1,6 @@
 ---
 name: google-ads-scripts-library
-description: |
-  This skill should be used when the user asks to "set up Google Ads Scripts",
-  "automate bid adjustments with scripts", "create budget pacing alerts",
-  "detect performance anomalies", or mentions "N-gram analysis script",
-  "broken URL checker", or "Google Ads automation scripts".
-  Do NOT use for: manual campaign optimization (use performance-troubleshooter), keyword strategy planning (use keyword-strategy-planner), or Quality Score improvement (use quality-score-optimizer).
+description: "This skill should be used when the user asks to \"set up Google Ads Scripts\", \"automate bid adjustments with scripts\", \"create budget pacing alerts\", \"detect performance anomalies\", or mentions \"N-gram analysis script\", \"broken URL checker\", or \"Google Ads automation scripts\". Do NOT use for: manual campaign optimization (use performance-troubleshooter), keyword strategy planning (use keyword-strategy-planner), or Quality Score improvement (use quality-score-optimizer)."
 ---
 # Google Ads Scripts Library
 
@@ -13,7 +8,7 @@ Complete library with 15 production-ready Google Ads Scripts for automation, mon
 
 ## 2026 Context: Scripts vs. MCP Tools
 
-Google Ads Scripts run inside the Google Ads UI and use the legacy AdsApp object. They are useful for scheduled, account-level automation that runs without human intervention. For ad-hoc analysis and conversational workflows, use the AdSuperpowers MCP tools instead:
+Google Ads Scripts run inside the Google Ads UI and use the legacy AdsApp object. They are useful for scheduled, account-level automation that runs without human intervention. For ad-hoc analysis and conversational workflows, use the Ad Superpowers MCP tools instead:
 
 ```
 # Pull anomaly data via MCP (no script required):
@@ -92,7 +87,7 @@ SETUP INSTRUCTIONS (for all scripts):
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Anomaly thresholds (% change vs 7-day average)
   CPA_THRESHOLD: 0.30,         // Alert on 30% CPA increase
@@ -257,7 +252,7 @@ function sendAnomalyAlert(anomalies) {
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Pacing thresholds
   UNDERPACE_ALERT: 0.15,    // Alert if >15% behind pace
@@ -414,7 +409,7 @@ See [detailed-reference.md](references/detailed-reference.md) for details.
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Set to false to actually pause items
   DRY_RUN: true,

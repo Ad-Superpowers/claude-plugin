@@ -1,8 +1,6 @@
 ---
 name: gtm-container-auditor
-description: |
-  This skill should be used when the user asks to "audit my GTM container", "find duplicate tags", "clean up Tag Manager", mentions "GTM health check", "unused tags and triggers", or "consent compliance of tags".
-  Do NOT use for: server-side tracking or CAPI implementation (use first-party-data-strategy), attribution discrepancies between platforms (use attribution-reconciler), or general tag implementation guidance (use platform-specific skills).
+description: "This skill should be used when the user asks to \"audit my GTM container\", \"find duplicate tags\", \"clean up Tag Manager\", mentions \"GTM health check\", \"unused tags and triggers\", or \"consent compliance of tags\". Do NOT use for: server-side tracking or CAPI implementation (use first-party-data-strategy), attribution discrepancies between platforms (use attribution-reconciler), or general tag implementation guidance (use platform-specific skills)."
 ---
 # GTM Container Auditor
 

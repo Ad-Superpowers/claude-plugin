@@ -1,10 +1,6 @@
 ---
 name: tiktok-app-performance-tracker
-description: |
-  This skill should be used when the user asks to "optimize TikTok app install campaigns",
-  "reconcile TikTok MMP data", "fix TikTok SKAN attribution", or mentions
-  "TikTok cost per install", "TikTok AppsFlyer numbers don't match", or "TikTok app event tracking".
-  Do NOT use for: TikTok creative fatigue (use tiktok-creative-fatigue-tracker), TikTok video performance (use tiktok-video-performance-analyzer), or TikTok benchmark lookups (use tiktok-benchmark-database).
+description: "This skill should be used when the user asks to \"optimize TikTok app install campaigns\", \"reconcile TikTok MMP data\", \"fix TikTok SKAN attribution\", or mentions \"TikTok cost per install\", \"TikTok AppsFlyer numbers don't match\", or \"TikTok app event tracking\". Do NOT use for: TikTok creative fatigue (use tiktok-creative-fatigue-tracker), TikTok video performance (use tiktok-video-performance-analyzer), or TikTok benchmark lookups (use tiktok-benchmark-database)."
 ---
 # TikTok App Performance Tracker
 

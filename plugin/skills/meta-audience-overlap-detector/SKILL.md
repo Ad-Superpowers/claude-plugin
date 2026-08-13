@@ -1,11 +1,6 @@
 ---
 name: meta-audience-overlap-detector
-description: |
-  This skill should be used when the user asks to "detect audience overlap", "consolidate audiences",
-  "set up exclusion strategies", or mentions "audience overlap", "self-bidding",
-  or "internal auction competition". Do NOT use for: campaign structure advice
-  (use campaign-structure-advisor), lookalike strategy (use lookalike-strategy-planner),
-  full-funnel design (use full-funnel-designer).
+description: "This skill should be used when the user asks to \"detect audience overlap\", \"consolidate audiences\", \"set up exclusion strategies\", or mentions \"audience overlap\", \"self-bidding\", or \"internal auction competition\". Do NOT use for: campaign structure advice (use campaign-structure-advisor), lookalike strategy (use lookalike-strategy-planner), full-funnel design (use full-funnel-designer)."
 ---
 # Audience Overlap Detector
 

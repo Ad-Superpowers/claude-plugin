@@ -1,5 +1,5 @@
 ---
-description: Compare organic keywords (Search Console) with paid keywords (Google Ads) to find cannibalization, savings opportunities, and content gaps. Identifies keywords where you're paying for clicks you could get organically, and paid keywords that need organic content. (requires Pro subscription)
+description: "Compare organic keywords (Search Console) with paid keywords (Google Ads) to find cannibalization, savings opportunities, and content gaps. Identifies keywords where you're paying for clicks you could get organically, and paid keywords that need organic content. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -16,9 +16,9 @@ Compare organic search performance (Google Search Console) with paid search keyw
 ## Parameters
 - Site URL: [specify site_url]
 - Google Ads Account: [specify google_ads_account]
-- Period: {{ days | default(28) }} days
+- Period: 28 days
 - Country: all
-- Minimum impressions: {{ min_impressions | default(50) }}
+- Minimum impressions: 50
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 
@@ -69,8 +69,10 @@ Use `google_ads_list_accounts` to confirm access to the Google Ads account.
 Use `gsc_search_analytics`:
 - site_url: "[specify site_url]"
 - dimensions: ["query"]
-- days: {{ days | default(28) }}
-- row_limit: {{ limit | default(1000) }}
+- days: 28
+- row_limit: 1000
+
+> Conditional: if country
 - country_filter: "[specify country]"
 
 Record: query, clicks, impressions, ctr, position.

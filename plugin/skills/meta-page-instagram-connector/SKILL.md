@@ -1,13 +1,6 @@
 ---
 name: meta-page-instagram-connector
-description: |
-  This skill should be used when the user wants to set up a client's Facebook Page and Instagram
-  for ads, connect Meta Page and Instagram to a client, wire a client's Meta Page and IG, decide
-  which Facebook Page a client's ads post from, or fix a client's Instagram-access (error 1815199)
-  problem. It discovers the promotable Pages and connected Instagram accounts for the client's Meta
-  ad account and saves the chosen identities onto the client profile, so meta_create_ad resolves them
-  automatically on every ad. Do NOT use for: building the ad itself (use ad-launch-playbook), general
-  client import/grouping (use client-context-onboarding), or bid strategy (use bid-strategy-selector).
+description: "This skill should be used when the user wants to set up a client's Facebook Page and Instagram for ads, connect Meta Page and Instagram to a client, wire a client's Meta Page and IG, decide which Facebook Page a client's ads post from, or fix a client's Instagram-access (error 1815199) problem. It discovers the promotable Pages and connected Instagram accounts for the client's Meta ad account and saves the chosen identities onto the client profile, so meta_create_ad resolves them automatically on every ad. Do NOT use for: building the ad itself (use ad-launch-playbook), general client import/grouping (use client-context-onboarding), or bid strategy (use bid-strategy-selector)."
 ---
 # Meta Page & Instagram Connector
 
@@ -76,8 +69,8 @@ clients_update(
         {
             "platform": "meta",
             "account_id": "act_1234567890",
-            "facebook_page_id": "1074464832418530",
-            "instagram_user_id": "17841423948601304",
+            "facebook_page_id": "1234567890",
+            "instagram_user_id": "17841400001234",
         }
     ],
 )
@@ -98,7 +91,7 @@ From now on, `meta_create_ad` for this client resolves the Page/IG automatically
 ## Edge cases
 
 - **No promotable Pages** (`promotepages` empty): the ad account has no Page access. Grant the account access to the Page in Meta Business settings, then retry.
-- **No connected Instagram / error `1815199`**: the Page has no linked Instagram, or the ad account cannot access it. Either run **Facebook-only** (Page set, `instagram_user_id` null), or link the Instagram account in Business settings and retry. Do not store an IG id the account cannot access — that is exactly what produces `1815199` at ad-creation time.
+- **No connected Instagram / error `1815199`**: the Page has no linked Instagram, or the ad account cannot access it. Either run **Facebook-only** (Page set, `instagram_user_id` null), or link the Instagram account in Business settings and retry. Do not save an IG id the account cannot access — that is exactly what produces `1815199` at ad-creation time.
 - **More than one client on the same ad account:** disambiguate with the user before saving; never silently pick a client.
 - **Picked the wrong one:** rerun step 4 with the corrected id (patch-merge overwrites it).
 

@@ -1,11 +1,6 @@
 ---
 name: meta-workflow-optimizer
-description: |
-  This skill should be used when the user asks to "optimize my Meta Ads workflow",
-  "create a daily checklist", "build SOPs for ad management", or mentions "Meta Ads workflow",
-  "weekly review process", or "campaign management routine". Do NOT use for: automated rules
-  setup (use automated-rules-builder), campaign structure (use campaign-structure-advisor),
-  performance diagnostics (use performance-troubleshooter).
+description: "This skill should be used when the user asks to \"optimize my Meta Ads workflow\", \"create a daily checklist\", \"build SOPs for ad management\", or mentions \"Meta Ads workflow\", \"weekly review process\", or \"campaign management routine\". Do NOT use for: automated rules setup (use automated-rules-builder), campaign structure (use campaign-structure-advisor), performance diagnostics (use performance-troubleshooter)."
 ---
 # Workflow Optimizer
 

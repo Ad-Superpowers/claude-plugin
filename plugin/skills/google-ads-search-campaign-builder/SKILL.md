@@ -1,10 +1,6 @@
 ---
 name: google-ads-search-campaign-builder
-description: |
-  This skill should be used when the user asks to "build a Search campaign", "write RSA ad copy",
-  "improve Ad Strength", "set up sitelinks and callouts", or mentions "lead generation campaign",
-  "call extensions", "lead forms", or "search campaign structure".
-  Do NOT use for: Performance Max campaigns (use performance-max-optimizer), Shopping campaigns (use shopping-campaign-structure-advisor), bid strategy selection (use bid-strategy-selector).
+description: "This skill should be used when the user asks to \"build a Search campaign\", \"write RSA ad copy\", \"improve Ad Strength\", \"set up sitelinks and callouts\", or mentions \"lead generation campaign\", \"call extensions\", \"lead forms\", or \"search campaign structure\". Do NOT use for: Performance Max campaigns (use performance-max-optimizer), Shopping campaigns (use shopping-campaign-structure-advisor), bid strategy selection (use bid-strategy-selector)."
 ---
 # Search Campaign Builder
 
@@ -497,7 +493,7 @@ CALL CONVERSION SETTINGS:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds
   MIN_SITELINKS: 4,

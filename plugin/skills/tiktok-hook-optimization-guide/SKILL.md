@@ -1,11 +1,6 @@
 ---
 name: tiktok-hook-optimization-guide
-description: |
-  This skill should be used when the user asks to "improve TikTok ad hooks",
-  "stop the scroll on TikTok", "optimize the first 2 seconds",
-  "get hook formulas for TikTok", or mentions "hook rate",
-  "video retention drop-off", or "scroll-stopping techniques".
-  Do NOT use for: overall creative fatigue analysis (use tiktok-creative-fatigue-tracker), audience targeting (use tiktok-audience-strategy), or Spark Ads strategy (use tiktok-spark-ads-strategy).
+description: "This skill should be used when the user asks to \"improve TikTok ad hooks\", \"stop the scroll on TikTok\", \"optimize the first 2 seconds\", \"get hook formulas for TikTok\", or mentions \"hook rate\", \"video retention drop-off\", or \"scroll-stopping techniques\". Do NOT use for: overall creative fatigue analysis (use tiktok-creative-fatigue-tracker), audience targeting (use tiktok-audience-strategy), or Spark Ads strategy (use tiktok-spark-ads-strategy)."
 ---
 
 # TikTok Hook Optimization Guide

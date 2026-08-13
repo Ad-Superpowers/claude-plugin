@@ -1,9 +1,6 @@
 ---
 name: ga4-audience-builder
-description: |
-  This skill should be used when the user asks to "build GA4 audiences", "create custom segments",
-  "set up audience targeting", or mentions "sequential audiences", "user segments", or "remarketing audiences in GA4".
-  Do NOT use for: audience exclusions (use ga4-audience-exclusions), predictive audiences (use ga4-predictive-audiences), or exporting audiences to Google Ads (use ga4-remarketing-setup).
+description: "This skill should be used when the user asks to \"build GA4 audiences\", \"create custom segments\", \"set up audience targeting\", or mentions \"sequential audiences\", \"user segments\", or \"remarketing audiences in GA4\". Do NOT use for: audience exclusions (use ga4-audience-exclusions), predictive audiences (use ga4-predictive-audiences), or exporting audiences to Google Ads (use ga4-remarketing-setup)."
 ---
 # GA4 Audience Builder Guide
 

@@ -1,11 +1,6 @@
 ---
 name: meta-learning-phase-tracker
-description: |
-  This skill should be used when the user asks to "check learning phase status", "predict edit impact",
-  "exit learning phase faster", or mentions "learning phase", "significant edit reset",
-  or "ad set health check". Do NOT use for: campaign structure decisions
-  (use campaign-structure-advisor), performance troubleshooting (use performance-troubleshooter),
-  bid strategy selection (use bid-strategy-selector).
+description: "This skill should be used when the user asks to \"check learning phase status\", \"predict edit impact\", \"exit learning phase faster\", or mentions \"learning phase\", \"significant edit reset\", or \"ad set health check\". Do NOT use for: campaign structure decisions (use campaign-structure-advisor), performance troubleshooting (use performance-troubleshooter), bid strategy selection (use bid-strategy-selector)."
 ---
 # Learning Phase Tracker
 

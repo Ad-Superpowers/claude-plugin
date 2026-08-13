@@ -1,8 +1,6 @@
 ---
 name: incrementality-testing-guide
-description: |
-  This skill should be used when the user asks to "run an incrementality test", "measure true ad impact", "design a geo lift test", mentions "incremental ROAS", "holdout experiment", or "is my advertising actually working".
-  Do NOT use for: attribution discrepancy diagnosis (use attribution-reconciler), A/B testing landing pages (use landing-page-optimization-guide), or first-party data / tracking setup (use first-party-data-strategy).
+description: "This skill should be used when the user asks to \"run an incrementality test\", \"measure true ad impact\", \"design a geo lift test\", mentions \"incremental ROAS\", \"holdout experiment\", or \"is my advertising actually working\". Do NOT use for: attribution discrepancy diagnosis (use attribution-reconciler), A/B testing landing pages (use landing-page-optimization-guide), or first-party data / tracking setup (use first-party-data-strategy)."
 ---
 # Incrementality Testing Guide
 

@@ -1,8 +1,6 @@
 ---
 name: competitor-analysis-toolkit
-description: |
-  This skill should be used when the user asks to "analyze competitor ads", "estimate competitor ad spend", "research competitors in Meta Ad Library", mentions "share of voice", "auction insights", or "competitive positioning strategy".
-  Do NOT use for: keyword gap analysis between organic and paid (use seo-sea-keyword-gap-analyzer), channel selection decisions (use channel-selection-framework), or creative fatigue on own ads (use platform-specific fatigue skills).
+description: "This skill should be used when the user asks to \"analyze competitor ads\", \"estimate competitor ad spend\", \"research competitors in Meta Ad Library\", mentions \"share of voice\", \"auction insights\", or \"competitive positioning strategy\". Do NOT use for: keyword gap analysis between organic and paid (use seo-sea-keyword-gap-analyzer), channel selection decisions (use channel-selection-framework), or creative fatigue on own ads (use platform-specific fatigue skills)."
 ---
 # Competitor Analysis Toolkit for Advertising
 
@@ -520,4 +518,4 @@ gsc_search_analytics(site_url="https://yourdomain.com", dimensions=["query"], da
 Auction insights show which competitors are actively bidding on your keywords. GSC positions show where you rank organically — compare these to identify where competitors outrank you and where you have room to take share.
 
 *Last updated: February 2026*
-*Framework based on industry best practices and AdSuperpowers methodology*
+*Framework based on industry best practices and Ad Superpowers methodology*

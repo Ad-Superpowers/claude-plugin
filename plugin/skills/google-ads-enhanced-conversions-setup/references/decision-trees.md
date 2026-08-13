@@ -177,7 +177,7 @@ if (window.google_tag_manager) {
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   MIN_MATCH_RATE: 0.4 // 40% minimum match rate
 };
 

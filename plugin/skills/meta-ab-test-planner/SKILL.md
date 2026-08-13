@@ -1,11 +1,6 @@
 ---
 name: meta-ab-test-planner
-description: |
-  This skill should be used when the user asks to "plan an A/B test", "calculate sample size",
-  "analyze test results", or mentions "Meta split test", "statistical significance",
-  or "testing roadmap". Do NOT use for: creative brainstorming
-  (use creative-diversification-generator), ad copy writing (use ad-copy-generator),
-  campaign structure (use campaign-structure-advisor).
+description: "This skill should be used when the user asks to \"plan an A/B test\", \"calculate sample size\", \"analyze test results\", or mentions \"Meta split test\", \"statistical significance\", or \"testing roadmap\". Do NOT use for: creative brainstorming (use creative-diversification-generator), ad copy writing (use ad-copy-generator), campaign structure (use campaign-structure-advisor)."
 ---
 # A/B Test Planner
 

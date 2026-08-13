@@ -1,8 +1,6 @@
 ---
 name: seo-sea-keyword-gap-analyzer
-description: |
-  This skill should be used when the user asks to "compare organic and paid keywords", "find SEO SEA cannibalization", "stop bidding on organic rankings", mentions "keyword overlap between GSC and Google Ads", "paid-only keyword dependencies", or "budget savings from organic".
-  Do NOT use for: general GSC performance analysis (use gsc-performance-analyzer), Google Ads campaign optimization (use Google Ads platform skills), or competitor keyword research (use competitor-analysis-toolkit).
+description: "This skill should be used when the user asks to \"compare organic and paid keywords\", \"find SEO SEA cannibalization\", \"stop bidding on organic rankings\", mentions \"keyword overlap between GSC and Google Ads\", \"paid-only keyword dependencies\", or \"budget savings from organic\". Do NOT use for: general GSC performance analysis (use gsc-performance-analyzer), Google Ads campaign optimization (use Google Ads platform skills), or competitor keyword research (use competitor-analysis-toolkit)."
 ---
 # SEO vs SEA Keyword Gap Analyzer
 

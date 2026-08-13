@@ -75,7 +75,7 @@ EXCLUSION SETUP:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds for exclusion suggestion
   MIN_COST_FOR_ANALYSIS: 5,        // Min $5 spend
@@ -250,7 +250,7 @@ function truncateUrl(url, maxLength) {
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds for exclusion suggestion
   MIN_COST_FOR_ANALYSIS: 5,        // Min $5 spend

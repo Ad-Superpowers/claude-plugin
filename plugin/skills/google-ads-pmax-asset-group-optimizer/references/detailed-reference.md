@@ -17,7 +17,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds
   MIN_SPEND: 50,                 // Minimum spend for analysis

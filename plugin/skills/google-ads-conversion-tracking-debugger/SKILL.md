@@ -1,10 +1,6 @@
 ---
 name: google-ads-conversion-tracking-debugger
-description: |
-  This skill should be used when the user asks to "debug conversion tracking", "fix missing conversions",
-  "resolve duplicate conversions", "troubleshoot tag not firing", or mentions "GCLID issues",
-  "conversion discrepancy", or "Enhanced Conversions not working".
-  Do NOT use for: initial conversion tracking setup (use conversion-tracking-setup), Meta conversion issues (use meta tools), GA4 event debugging (use ga4 tools).
+description: "This skill should be used when the user asks to \"debug conversion tracking\", \"fix missing conversions\", \"resolve duplicate conversions\", \"troubleshoot tag not firing\", or mentions \"GCLID issues\", \"conversion discrepancy\", or \"Enhanced Conversions not working\". Do NOT use for: initial conversion tracking setup (use conversion-tracking-setup), Meta conversion issues (use meta tools), GA4 event debugging (use ga4 tools)."
 ---
 # Conversion Tracking Debugger
 

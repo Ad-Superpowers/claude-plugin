@@ -1,10 +1,6 @@
 ---
 name: linkedin-revenue-attribution
-description: |
-  This skill should be used when the user asks to "prove LinkedIn ROI to leadership",
-  "connect CRM to LinkedIn attribution", "measure LinkedIn pipeline impact", or mentions
-  "LinkedIn revenue attribution", "B2B sales cycle attribution", or "LinkedIn value reporting".
-  Do NOT use for: LinkedIn cost benchmarks (use linkedin-cost-monitor or linkedin-benchmark-database), LinkedIn lead gen optimization (use linkedin-lead-gen-optimizer), or LinkedIn bid strategy (use linkedin-bid-strategy-selector).
+description: "This skill should be used when the user asks to \"prove LinkedIn ROI to leadership\", \"connect CRM to LinkedIn attribution\", \"measure LinkedIn pipeline impact\", or mentions \"LinkedIn revenue attribution\", \"B2B sales cycle attribution\", or \"LinkedIn value reporting\". Do NOT use for: LinkedIn cost benchmarks (use linkedin-cost-monitor or linkedin-benchmark-database), LinkedIn lead gen optimization (use linkedin-lead-gen-optimizer), or LinkedIn bid strategy (use linkedin-bid-strategy-selector)."
 ---
 # LinkedIn Revenue Attribution
 

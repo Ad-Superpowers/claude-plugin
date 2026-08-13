@@ -1,11 +1,6 @@
 ---
 name: google-ads-shopping-campaign-structure-advisor
-description: |
-  This skill should be used when the user asks to "structure Shopping campaigns",
-  "choose between Standard Shopping and PMax", "set up product group subdivisions",
-  "migrate from Standard Shopping to PMax", or mentions "campaign priority",
-  "query sculpting", or "Shopping campaign setup".
-  Do NOT use for: PMax general optimization (use performance-max-optimizer), PMax auditing (use pmax-audit-checklist), Shopping feed optimization (use shopping-feed-optimizer).
+description: "This skill should be used when the user asks to \"structure Shopping campaigns\", \"choose between Standard Shopping and PMax\", \"set up product group subdivisions\", \"migrate from Standard Shopping to PMax\", or mentions \"campaign priority\", \"query sculpting\", or \"Shopping campaign setup\". Do NOT use for: PMax general optimization (use performance-max-optimizer), PMax auditing (use pmax-audit-checklist), Shopping feed optimization (use shopping-feed-optimizer)."
 ---
 # Shopping Campaign Structure Advisor
 

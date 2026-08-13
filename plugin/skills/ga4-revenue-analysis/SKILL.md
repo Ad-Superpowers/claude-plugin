@@ -1,9 +1,6 @@
 ---
 name: ga4-revenue-analysis
-description: |
-  This skill should be used when the user asks to "analyze GA4 revenue", "review product performance",
-  "build a checkout funnel", or mentions "purchase journey insights", "e-commerce KPI dashboard", or "revenue trends in GA4".
-  Do NOT use for: e-commerce event implementation (use ga4-ecommerce-setup), promotion and coupon tracking (use ga4-promotion-tracking).
+description: "This skill should be used when the user asks to \"analyze GA4 revenue\", \"review product performance\", \"build a checkout funnel\", or mentions \"purchase journey insights\", \"e-commerce KPI dashboard\", or \"revenue trends in GA4\". Do NOT use for: e-commerce event implementation (use ga4-ecommerce-setup), promotion and coupon tracking (use ga4-promotion-tracking)."
 ---
 # GA4 Revenue Analysis Guide
 

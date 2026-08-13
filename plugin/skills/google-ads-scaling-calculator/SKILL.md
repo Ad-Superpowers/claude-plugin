@@ -1,10 +1,6 @@
 ---
 name: google-ads-scaling-calculator
-description: |
-  This skill should be used when the user asks to "scale Google Ads budget", "calculate incremental ROAS",
-  "analyze diminishing returns", "plan a scaling roadmap", or mentions "iROAS",
-  "break-even calculation", or "profit maximization model".
-  Do NOT use for: initial campaign setup (use search-campaign-builder), bid strategy selection (use learning-phase-tracker).
+description: "This skill should be used when the user asks to \"scale Google Ads budget\", \"calculate incremental ROAS\", \"analyze diminishing returns\", \"plan a scaling roadmap\", or mentions \"iROAS\", \"break-even calculation\", or \"profit maximization model\". Do NOT use for: initial campaign setup (use search-campaign-builder), bid strategy selection (use learning-phase-tracker)."
 ---
 # Scaling Calculator
 

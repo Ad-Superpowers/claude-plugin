@@ -1,9 +1,6 @@
 ---
 name: gsc-performance-analyzer
-description: |
-  This skill should be used when the user asks to "analyze GSC performance", "optimize organic CTR",
-  "check keyword rankings", or mentions "position tracking", "seasonal SEO trends", or "Google Discover performance".
-  Do NOT use for: indexing problems or technical SEO issues (use technical-seo-monitor).
+description: "This skill should be used when the user asks to \"analyze GSC performance\", \"optimize organic CTR\", \"check keyword rankings\", or mentions \"position tracking\", \"seasonal SEO trends\", or \"Google Discover performance\". Do NOT use for: indexing problems or technical SEO issues (use technical-seo-monitor)."
 ---
 # GSC Performance Analyzer
 

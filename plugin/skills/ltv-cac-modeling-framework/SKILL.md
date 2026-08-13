@@ -1,11 +1,6 @@
 ---
 name: ltv-cac-modeling-framework
-description: |
-  This skill should be used when the user asks to "calculate customer lifetime value",
-  "set CPA targets based on LTV", "evaluate LTV to CAC ratio",
-  "calculate payback period", or mentions "LTV:CAC", "customer acquisition cost",
-  "MER", or "maximum allowable acquisition cost".
-  Do NOT use for: single-campaign ROAS optimization (use platform-specific skills), creative performance analysis (use creative-fatigue-analyzer), or funnel structure design (use ecommerce-funnel-optimizer).
+description: "This skill should be used when the user asks to \"calculate customer lifetime value\", \"set CPA targets based on LTV\", \"evaluate LTV to CAC ratio\", \"calculate payback period\", or mentions \"LTV:CAC\", \"customer acquisition cost\", \"MER\", or \"maximum allowable acquisition cost\". Do NOT use for: single-campaign ROAS optimization (use platform-specific skills), creative performance analysis (use creative-fatigue-analyzer), or funnel structure design (use ecommerce-funnel-optimizer)."
 ---
 
 # LTV:CAC Modeling Framework

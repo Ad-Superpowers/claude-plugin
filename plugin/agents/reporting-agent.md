@@ -85,7 +85,7 @@ Loading every skill eagerly is anti-pattern — search and load on demand.
 
 ### Competitive Context
 - `google_ads_run_gaql(query="FROM auction_insight...")` — Competitor overlap, outranking share
-- Benchmark databases for all 4 platforms provide sourced industry averages
+- Benchmark databases for Meta, Google Ads, LinkedIn, and TikTok provide sourced industry averages
 
 ### Catalog & E-commerce
 - `meta_query(entity_type="productcatalogs")` — Catalog health for e-commerce reports

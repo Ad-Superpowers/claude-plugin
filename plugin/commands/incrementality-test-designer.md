@@ -1,5 +1,5 @@
 ---
-description: Design rigorous incrementality tests to measure true advertising impact. Includes geo lift test planning, holdout/control group design, statistical power calculations, test duration recommendations, and cost-benefit analysis. Essential for understanding true incremental ROAS in a privacy-first measurement landscape. (requires Pro subscription)
+description: "Design rigorous incrementality tests to measure true advertising impact. Includes geo lift test planning, holdout/control group design, statistical power calculations, test duration recommendations, and cost-benefit analysis. Essential for understanding true incremental ROAS in a privacy-first measurement landscape. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 

@@ -1,10 +1,6 @@
 ---
 name: meta-creative-diversification-generator
-description: |
-  This skill should be used when the user asks to "brainstorm ad creatives", "generate hook strategies",
-  "build modular creative systems", "create UGC briefs", or mentions "creative diversification"
-  or "ad concept variations". Do NOT use for: ad copy writing only (use ad-copy-generator),
-  video scripts only (use video-script-writer), creative fatigue analysis (use creative-fatigue-analyzer).
+description: "This skill should be used when the user asks to \"brainstorm ad creatives\", \"generate hook strategies\", \"build modular creative systems\", \"create UGC briefs\", or mentions \"creative diversification\" or \"ad concept variations\". Do NOT use for: ad copy writing only (use ad-copy-generator), video scripts only (use video-script-writer), creative fatigue analysis (use creative-fatigue-analyzer)."
 ---
 # Creative Diversification Generator
 

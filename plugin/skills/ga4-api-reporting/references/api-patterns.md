@@ -28,7 +28,7 @@ STEP 3: GRANT GA4 ACCESS
 ─────────────────────────
 1. Go to GA4 Admin → Property Access Management
 2. Add Users → Add service account email
-   └── Email format: name@project-id.iam.gserviceaccount.com
+   └── Email format: <name>@<project-id>.iam.gserviceaccount.com
 3. Role: Viewer (for read-only API access)
 
 AUTHENTICATION OPTIONS:

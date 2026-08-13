@@ -1,9 +1,6 @@
 ---
 name: ga4-audience-exclusions
-description: |
-  This skill should be used when the user asks to "exclude converters from campaigns", "set up audience exclusions",
-  "prevent audience overlap", or mentions "frequency capping", "purchaser exclusions", or "budget waste from overlap".
-  Do NOT use for: building audiences (use ga4-audience-builder), predictive audiences (use ga4-predictive-audiences), or remarketing export setup (use ga4-remarketing-setup).
+description: "This skill should be used when the user asks to \"exclude converters from campaigns\", \"set up audience exclusions\", \"prevent audience overlap\", or mentions \"frequency capping\", \"purchaser exclusions\", or \"budget waste from overlap\". Do NOT use for: building audiences (use ga4-audience-builder), predictive audiences (use ga4-predictive-audiences), or remarketing export setup (use ga4-remarketing-setup)."
 ---
 # GA4 Audience Exclusions Guide
 

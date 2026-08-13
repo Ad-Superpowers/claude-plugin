@@ -1,5 +1,5 @@
 ---
-description: Comprehensive audit of your organic search performance using Google Search Console data. Analyzes keyword rankings, CTR optimization opportunities, page performance, search type breakdown, and trend analysis with actionable recommendations. (requires Pro subscription)
+description: "Comprehensive audit of your organic search performance using Google Search Console data. Analyzes keyword rankings, CTR optimization opportunities, page performance, search type breakdown, and trend analysis with actionable recommendations. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -14,10 +14,10 @@ disable-model-invocation: true
 Comprehensive organic search analysis using Google Search Console data.
 
 - Site: [specify site_url]
-- Period: {{ days | default(28) }} days
+- Period: 28 days
 - Country: all
 - Search type: web
-- Min impressions for striking distance: {{ min_impressions | default(100) }}
+- Min impressions for striking distance: 100
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 
@@ -68,8 +68,10 @@ Potential = impressions * expected CTR at position 3.
 ```
 gsc_search_analytics(
     site_url="[specify site_url]",
-    days={{ days | default(28) }},
-    country_filter="[specify country]",
+    days=28,
+
+> Conditional: if country
+country_filter="[specify country]",
     search_type="web"
 )
 ```
@@ -80,9 +82,11 @@ No dimensions = aggregated totals for clicks, impressions, CTR, position.
 gsc_search_analytics(
     site_url="[specify site_url]",
     dimensions=["query"],
-    days={{ days | default(28) }},
+    days=28,
     row_limit=50,
-    country_filter="[specify country]",
+
+> Conditional: if country
+country_filter="[specify country]",
     search_type="web"
 )
 ```
@@ -93,9 +97,11 @@ Use the top 10 by clicks for the keyword table. Flag any with CTR below benchmar
 gsc_search_analytics(
     site_url="[specify site_url]",
     dimensions=["page"],
-    days={{ days | default(28) }},
+    days=28,
     row_limit=50,
-    country_filter="[specify country]",
+
+> Conditional: if country
+country_filter="[specify country]",
     search_type="web"
 )
 ```
@@ -106,13 +112,15 @@ Identify high-impression/low-click pages (CTR optimization candidates).
 gsc_search_analytics(
     site_url="[specify site_url]",
     dimensions=["query"],
-    days={{ days | default(28) }},
+    days=28,
     row_limit=5000,
-    country_filter="[specify country]",
+
+> Conditional: if country
+country_filter="[specify country]",
     search_type="web"
 )
 ```
-Filter results: position between 4 and 20, impressions > {{ min_impressions | default(100) }}.
+Filter results: position between 4 and 20, impressions > 100.
 Calculate potential clicks if moved to position 3 (use 11% CTR * impressions).
 
 ### Step 5: Get daily trend
@@ -120,17 +128,19 @@ Calculate potential clicks if moved to position 3 (use 11% CTR * impressions).
 gsc_search_analytics(
     site_url="[specify site_url]",
     dimensions=["date"],
-    days={{ days | default(28) }},
-    country_filter="[specify country]",
+    days=28,
+
+> Conditional: if country
+country_filter="[specify country]",
     search_type="web"
 )
 ```
 Identify sudden drops, spikes, or weekly patterns.
 
-{% if search_type == "all" %}
+> Conditional: if search_type == "all"
+
 ### Step 6: Search type breakdown
 Run separate queries for search_type="web", "discover", and "image" to compare performance across search types.
-
 
 ### Step 6: Compile and recommend
 - Rank CTR optimization opportunities by impression volume (highest impact first)

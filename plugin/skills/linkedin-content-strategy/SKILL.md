@@ -1,11 +1,6 @@
 ---
 name: linkedin-content-strategy
-description: |
-  This skill should be used when the user asks to "choose a LinkedIn ad format",
-  "build a B2B content funnel on LinkedIn", "compare carousel vs video on LinkedIn",
-  "create Thought Leader Ads", or mentions "LinkedIn ad format",
-  "Sponsored Content strategy", or "LinkedIn creative best practices".
-  Do NOT use for: lead form optimization (use linkedin-lead-gen-optimizer), campaign scaling (use linkedin-campaign-scaling-guide), or ABM targeting (use linkedin-abm-targeting-strategy).
+description: "This skill should be used when the user asks to \"choose a LinkedIn ad format\", \"build a B2B content funnel on LinkedIn\", \"compare carousel vs video on LinkedIn\", \"create Thought Leader Ads\", or mentions \"LinkedIn ad format\", \"Sponsored Content strategy\", or \"LinkedIn creative best practices\". Do NOT use for: lead form optimization (use linkedin-lead-gen-optimizer), campaign scaling (use linkedin-campaign-scaling-guide), or ABM targeting (use linkedin-abm-targeting-strategy)."
 ---
 
 # LinkedIn Ad Format Selection & Content Strategy

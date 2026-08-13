@@ -1,11 +1,6 @@
 ---
 name: meta-prompt-engineering-library
-description: |
-  This skill should be used when the user asks to "get AI prompts for Meta Ads", "optimize prompts
-  for ad analysis", "find prompt templates", or mentions "prompt engineering for ads",
-  "AI workflow prompts", or "Meta Ads prompt library". Do NOT use for: ad copy writing
-  directly (use ad-copy-generator), video scripts (use video-script-writer), campaign
-  diagnostics (use performance-troubleshooter).
+description: "This skill should be used when the user asks to \"get AI prompts for Meta Ads\", \"optimize prompts for ad analysis\", \"find prompt templates\", or mentions \"prompt engineering for ads\", \"AI workflow prompts\", or \"Meta Ads prompt library\". Do NOT use for: ad copy writing directly (use ad-copy-generator), video scripts (use video-script-writer), campaign diagnostics (use performance-troubleshooter)."
 ---
 # Prompt Engineering Library
 
@@ -321,7 +316,7 @@ FORMAT: Professional, scannable, max 1 page
 
 #### Gemini Image Generation (Native — Preferred)
 
-AdSuperpowers has native Gemini image generation via the `gemini_generate_image` tool. This is the fastest path from brief to Meta-ready creative — images can be uploaded directly to the Meta media library in one call.
+Ad Superpowers has native Gemini image generation via the `gemini_generate_image` tool. This is the fastest path from brief to Meta-ready creative — images can be uploaded directly to the Meta media library in one call.
 
 ```
 WORKFLOW: BRIEF → GENERATE → DEPLOY

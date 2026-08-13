@@ -1,11 +1,6 @@
 ---
 name: google-ads-account-auditor
-description: |
-  This skill should be used when the user asks to "audit a Google Ads account",
-  "do an account takeover review", "run a health check on Google Ads",
-  "identify optimization opportunities", or mentions "account audit",
-  "periodic review", or "account health score".
-  Do NOT use for: single campaign troubleshooting (use performance-troubleshooter), keyword-only analysis (use keyword-strategy-planner).
+description: "This skill should be used when the user asks to \"audit a Google Ads account\", \"do an account takeover review\", \"run a health check on Google Ads\", \"identify optimization opportunities\", or mentions \"account audit\", \"periodic review\", or \"account health score\". Do NOT use for: single campaign troubleshooting (use performance-troubleshooter), keyword-only analysis (use keyword-strategy-planner)."
 ---
 # Account Auditor
 

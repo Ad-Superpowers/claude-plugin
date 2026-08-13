@@ -1,11 +1,6 @@
 ---
 name: linkedin-campaign-scaling-guide
-description: |
-  This skill should be used when the user asks to "scale LinkedIn ad spend",
-  "break through a LinkedIn campaign plateau", "expand LinkedIn audiences",
-  "optimize LinkedIn bid strategy", or mentions "LinkedIn diminishing returns",
-  "audience saturation", or "LinkedIn budget allocation".
-  Do NOT use for: initial campaign setup (use linkedin-content-strategy), lead quality issues (use linkedin-lead-scoring-framework), or ABM targeting (use linkedin-abm-targeting-strategy).
+description: "This skill should be used when the user asks to \"scale LinkedIn ad spend\", \"break through a LinkedIn campaign plateau\", \"expand LinkedIn audiences\", \"optimize LinkedIn bid strategy\", or mentions \"LinkedIn diminishing returns\", \"audience saturation\", or \"LinkedIn budget allocation\". Do NOT use for: initial campaign setup (use linkedin-content-strategy), lead quality issues (use linkedin-lead-scoring-framework), or ABM targeting (use linkedin-abm-targeting-strategy)."
 ---
 
 # LinkedIn Campaign Scaling Guide

@@ -1,9 +1,6 @@
 ---
 name: ga4-cross-platform-tracking
-description: |
-  This skill should be used when the user asks to "set up UTM parameters", "track Meta ads in GA4",
-  "implement cross-platform tracking", or mentions "auto-tagging vs UTM", "campaign naming conventions", or "LinkedIn/TikTok attribution in GA4".
-  Do NOT use for: channel grouping configuration (use ga4-channel-groupings), attribution model selection (use ga4-attribution-advisor).
+description: "This skill should be used when the user asks to \"set up UTM parameters\", \"track Meta ads in GA4\", \"implement cross-platform tracking\", or mentions \"auto-tagging vs UTM\", \"campaign naming conventions\", or \"LinkedIn/TikTok attribution in GA4\". Do NOT use for: channel grouping configuration (use ga4-channel-groupings), attribution model selection (use ga4-attribution-advisor)."
 ---
 # GA4 Cross-Platform Tracking Guide
 

@@ -1,11 +1,6 @@
 ---
 name: google-ads-bid-strategy-selector
-description: |
-  This skill should be used when the user asks to "choose a Google Ads bid strategy",
-  "compare tCPA vs tROAS", "set up value-based bidding", "migrate from manual to Smart Bidding",
-  or mentions "Portfolio Bidding", "Maximize Conversions", or "learning phase management".
-  Do NOT use for: Meta Ads bidding (use meta-bid-strategy-selector),
-  LinkedIn bidding (use linkedin-bid-strategy-selector), keyword strategy (use keyword-strategy-planner).
+description: "This skill should be used when the user asks to \"choose a Google Ads bid strategy\", \"compare tCPA vs tROAS\", \"set up value-based bidding\", \"migrate from manual to Smart Bidding\", or mentions \"Portfolio Bidding\", \"Maximize Conversions\", or \"learning phase management\". Do NOT use for: Meta Ads bidding (use meta-bid-strategy-selector), LinkedIn bidding (use linkedin-bid-strategy-selector), keyword strategy (use keyword-strategy-planner)."
 ---
 # Bid Strategy Selector
 
@@ -592,7 +587,7 @@ google_ads_run_gaql(query="
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   CPA_THRESHOLD: 0.25,     // Alert on 25% CPA increase
   ROAS_THRESHOLD: 0.20,    // Alert on 20% ROAS decline
   LEARNING_DAYS_ALERT: 14  // Alert if learning >14 days

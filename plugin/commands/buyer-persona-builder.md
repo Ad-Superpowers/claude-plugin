@@ -1,5 +1,5 @@
 ---
-description: Generate detailed buyer personas combining research with optional platform audience data. Creates 2-4 actionable personas with platform-specific targeting recommendations. (requires Pro subscription)
+description: "Generate detailed buyer personas combining research with optional platform audience data. Creates 2-4 actionable personas with platform-specific targeting recommendations. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -11,14 +11,14 @@ disable-model-invocation: true
 
 # Buyer Persona Builder
 
-Generate {{ num_personas | default(3) }} data-driven buyer personas for [specify company_name] in [specify industry]. Combines industry research with platform audience data to create actionable personas with targeting recommendations.
+Generate 3 data-driven buyer personas for [specify company_name] in [specify industry]. Combines industry research with platform audience data to create actionable personas with targeting recommendations.
 
 **Parameters:** b2c_product | Existing customers: Not provided
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 
 ### EXECUTIVE SUMMARY
-Based on {{ "platform data and " if ga4_property_id else "" }}industry research, {{ num_personas | default(3) }} buyer personas identified for [specify company_name].
+Based on [evaluate at run time: "platform data and " if ga4_property_id else ""]industry research, 3 buyer personas identified for [specify company_name].
 - Primary persona: [Name] ([X]% of ideal customers)
 - Secondary personas: [Names]
 
@@ -41,8 +41,12 @@ Based on {{ "platform data and " if ga4_property_id else "" }}industry research,
 | Location | [Geographic focus] |
 | Income | [Range] |
 | Education | [Level] |
-{% if product_type in ["b2b_saas", "b2b_services"] %}| Job Title | [Title] |
-| Company Size | [Range] || Family Status | [Status] |
+
+> Conditional: if product_type in ["b2b_saas", "b2b_services"]
+| Job Title | [Title] |
+| Company Size | [Range] |
+> Otherwise
+| Family Status | [Status] |
 
 **Goals & Pain Points:**
 - Goals: [Top 3 goals as numbered list]
@@ -71,7 +75,8 @@ Based on {{ "platform data and " if ga4_property_id else "" }}industry research,
 
 *Google Ads:* High-intent keywords [[list]], audience segments [in-market/affinity], negative keywords [[exclusions]]
 
-{% if product_type in ["b2b_saas", "b2b_services"] %}*LinkedIn:* Job titles [[list]], functions [[list]], seniority [[level]], company size [[range]], industries [[list]]
+> Conditional: if product_type in ["b2b_saas", "b2b_services"]
+*LinkedIn:* Job titles [[list]], functions [[list]], seniority [[level]], company size [[range]], industries [[list]]
 
 *TikTok:* Age [XX-XX], interests [[categories]], content strategy: hook style, themes, creator style (UGC/polished/educational)
 
@@ -120,16 +125,18 @@ Based on {{ "platform data and " if ga4_property_id else "" }}industry research,
 
 ### Step 1: Research Industry Buyers
 Research typical buyers in [specify industry]: demographics, job titles (B2B), pain points, buying motivations, decision process, trusted information sources, objections. Also analyze competitor targeting for gaps.
-{% if product_type == "b2b_saas" or product_type == "b2b_services" %}
+
+> Conditional: if product_type == "b2b_saas" or product_type == "b2b_services"
+
 For B2B: identify decision makers, influencers, end users, budget holders, buying committee size, sales cycle length.
 
-
 ### Step 2: Gather Platform Data (if connected)
+
+> Conditional: if ga4_property_id
 
 **GA4:** `ga4_run_report(property_id="[specify ga4_property_id]", start_date="90daysAgo", end_date="today", metrics=["activeUsers","sessions","conversions"], dimensions=["userAgeBracket","userGender","country","deviceCategory"])`
 
 Also run: `ga4_run_report(property_id="[specify ga4_property_id]", metrics=["sessions","totalUsers","newUsers"], dimensions=["sessionDefaultChannelGrouping"], start_date="90daysAgo", end_date="today")`
-
 
 **Meta:** `meta_get_insights(account_id=account_id, date_preset="last_90d", level="account", breakdowns=["age","gender","country"])`
 

@@ -1,9 +1,6 @@
 ---
 name: ga4-debugging-validation
-description: |
-  This skill should be used when the user asks to "debug GA4 tracking", "validate tag implementation",
-  "use DebugView", or mentions "data quality checks", "GA4 audit", or "event tracking not working".
-  Do NOT use for: e-commerce event setup (use ga4-ecommerce-setup), BigQuery data analysis (use ga4-bigquery-export).
+description: "This skill should be used when the user asks to \"debug GA4 tracking\", \"validate tag implementation\", \"use DebugView\", or mentions \"data quality checks\", \"GA4 audit\", or \"event tracking not working\". Do NOT use for: e-commerce event setup (use ga4-ecommerce-setup), BigQuery data analysis (use ga4-bigquery-export)."
 ---
 # GA4 Debugging & Validation Guide
 

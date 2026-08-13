@@ -1,11 +1,6 @@
 ---
 name: meta-privacy-compliance-checker
-description: |
-  This skill should be used when the user asks to "check privacy compliance", "validate GDPR setup",
-  "implement cookieless tracking", or mentions "Meta privacy compliance", "iOS 14 tracking setup",
-  or "consent management for ads". Do NOT use for: CAPI implementation details
-  (use capi-implementation-guide), EMQ optimization (use emq-optimizer), attribution window
-  decisions (use attribution-window-advisor).
+description: "This skill should be used when the user asks to \"check privacy compliance\", \"validate GDPR setup\", \"implement cookieless tracking\", or mentions \"Meta privacy compliance\", \"iOS 14 tracking setup\", or \"consent management for ads\". Do NOT use for: CAPI implementation details (use capi-implementation-guide), EMQ optimization (use emq-optimizer), attribution window decisions (use attribution-window-advisor)."
 ---
 # Privacy Compliance Checker
 

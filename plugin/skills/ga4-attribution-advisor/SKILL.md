@@ -1,9 +1,6 @@
 ---
 name: ga4-attribution-advisor
-description: |
-  This skill should be used when the user asks to "choose an attribution model", "compare DDA vs last-click",
-  "configure attribution windows", or mentions "cross-channel attribution", "first-click vs position-based", or "GA4 model comparison".
-  Do NOT use for: conversion import to Google Ads (use ga4-conversion-import), channel grouping configuration (use ga4-channel-groupings).
+description: "This skill should be used when the user asks to \"choose an attribution model\", \"compare DDA vs last-click\", \"configure attribution windows\", or mentions \"cross-channel attribution\", \"first-click vs position-based\", or \"GA4 model comparison\". Do NOT use for: conversion import to Google Ads (use ga4-conversion-import), channel grouping configuration (use ga4-channel-groupings)."
 ---
 # GA4 Attribution Advisor
 

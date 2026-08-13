@@ -1,11 +1,6 @@
 ---
 name: tiktok-spark-ads-strategy
-description: |
-  This skill should be used when the user asks to "set up Spark Ads on TikTok",
-  "boost organic TikTok posts as ads", "use UGC in paid TikTok campaigns",
-  "get a TikTok authorization code", or mentions "Spark Ads",
-  "creator content in ads", or "organic-to-paid TikTok strategy".
-  Do NOT use for: general TikTok creative optimization (use tiktok-creative-fatigue-tracker), hook optimization (use tiktok-hook-optimization-guide), or audience strategy (use tiktok-audience-strategy).
+description: "This skill should be used when the user asks to \"set up Spark Ads on TikTok\", \"boost organic TikTok posts as ads\", \"use UGC in paid TikTok campaigns\", \"get a TikTok authorization code\", or mentions \"Spark Ads\", \"creator content in ads\", or \"organic-to-paid TikTok strategy\". Do NOT use for: general TikTok creative optimization (use tiktok-creative-fatigue-tracker), hook optimization (use tiktok-hook-optimization-guide), or audience strategy (use tiktok-audience-strategy)."
 ---
 
 # TikTok Spark Ads Strategy

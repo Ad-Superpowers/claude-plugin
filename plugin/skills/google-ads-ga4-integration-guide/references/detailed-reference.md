@@ -15,7 +15,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Expected GA4 conversions (names)
   EXPECTED_GA4_CONVERSIONS: [

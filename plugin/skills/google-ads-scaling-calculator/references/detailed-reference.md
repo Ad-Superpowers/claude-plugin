@@ -126,7 +126,7 @@ Conclusion:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   BREAK_EVEN_ROAS: 2.5,
   ROAS_DROP_ALERT: 0.20,
   CPA_INCREASE_ALERT: 0.25,

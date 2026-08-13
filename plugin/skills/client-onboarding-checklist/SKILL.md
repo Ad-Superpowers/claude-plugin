@@ -1,10 +1,6 @@
 ---
 name: client-onboarding-checklist
-description: |
-  This skill should be used when the user asks to "onboard a new advertising client",
-  "audit an ad account before takeover", "build a client kickoff checklist",
-  "structure a 30/60/90 day plan", or mentions "agency onboarding" or "account takeover".
-  Do NOT use for: specific platform campaign builds (use platform-specific skills), billing/contract setup (outside scope), or creative production workflows (use creative-fatigue-analyzer).
+description: "This skill should be used when the user asks to \"onboard a new advertising client\", \"audit an ad account before takeover\", \"build a client kickoff checklist\", \"structure a 30/60/90 day plan\", or mentions \"agency onboarding\" or \"account takeover\". Do NOT use for: specific platform campaign builds (use platform-specific skills), billing/contract setup (outside scope), or creative production workflows (use creative-fatigue-analyzer)."
 ---
 
 # Agency Client Onboarding Checklist
@@ -526,7 +522,7 @@ BUDGET RECOMMENDATION
 | Audit | `ga4_run_report` | Website analytics baseline |
 | Audit | `gsc_search_analytics` | Organic search baseline |
 | Audit | `tiktok_get_report` | TikTok performance baseline |
-| Audit | `linkedin_get_insights` | LinkedIn performance baseline |
+| Audit | `linkedin_get_analytics` | LinkedIn performance baseline |
 | Strategy | `workflow(action="run")` | Run analysis workflows for strategy input |
 | Strategy | `skill(action="search")` | Find relevant expert skills |
 | Setup | `google_ads_run_keyword_planner` | Keyword research for Google campaigns |

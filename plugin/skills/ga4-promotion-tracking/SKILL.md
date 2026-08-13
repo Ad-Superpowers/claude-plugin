@@ -1,9 +1,6 @@
 ---
 name: ga4-promotion-tracking
-description: |
-  This skill should be used when the user asks to "track internal promotions", "measure coupon effectiveness",
-  "set up promotion tracking in GA4", or mentions "promotion banners", "coupon ROI", or "A/B testing promotions".
-  Do NOT use for: e-commerce event setup (use ga4-ecommerce-setup), revenue analysis and reporting (use ga4-revenue-analysis).
+description: "This skill should be used when the user asks to \"track internal promotions\", \"measure coupon effectiveness\", \"set up promotion tracking in GA4\", or mentions \"promotion banners\", \"coupon ROI\", or \"A/B testing promotions\". Do NOT use for: e-commerce event setup (use ga4-ecommerce-setup), revenue analysis and reporting (use ga4-revenue-analysis)."
 ---
 # GA4 Promotion Tracking Guide
 

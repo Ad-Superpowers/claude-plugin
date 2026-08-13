@@ -1,10 +1,6 @@
 ---
 name: meta-bid-strategy-selector
-description: |
-  This skill should be used when the user asks to "choose a bid strategy", "compare cost cap vs bid cap",
-  "set up value rules", or mentions "Meta bid strategy", "ROAS goal bidding", or "scaling bid approach".
-  Do NOT use for: Google Ads bidding (use google-bid-strategy-selector), campaign structure decisions
-  (use campaign-structure-advisor), creative testing (use creative-diversification-generator).
+description: "This skill should be used when the user asks to \"choose a bid strategy\", \"compare cost cap vs bid cap\", \"set up value rules\", or mentions \"Meta bid strategy\", \"ROAS goal bidding\", or \"scaling bid approach\". Do NOT use for: Google Ads bidding (use google-bid-strategy-selector), campaign structure decisions (use campaign-structure-advisor), creative testing (use creative-diversification-generator)."
 ---
 # Bid Strategy Selector
 

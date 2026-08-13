@@ -1,5 +1,5 @@
 ---
-description: Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) for strategic budget planning and opportunity assessment. (requires Pro subscription)
+description: "Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) for strategic budget planning and opportunity assessment. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -80,7 +80,7 @@ If Meta Ads connected, use Audience Manager reach estimates for:
 google_ads_run_keyword_planner(
     customer_id=customer_id,
     keywords=[[specify industry]-related keywords],
-    page_url="{{ company_website | default('') }}"
+    page_url=""
 )
 ```
 

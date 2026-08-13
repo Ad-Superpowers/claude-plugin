@@ -1,10 +1,6 @@
 ---
 name: tiktok-benchmark-database
-description: |
-  This skill should be used when the user asks to "look up TikTok benchmarks",
-  "compare TikTok CPM to industry average", "check TikTok Spark Ads benchmarks", or mentions
-  "is my TikTok CTR good", "TikTok ROAS benchmark", or "TikTok Shop performance standards".
-  Do NOT use for: TikTok creative fatigue detection (use tiktok-creative-fatigue-tracker), TikTok video hook/length optimization (use tiktok-video-performance-analyzer), or TikTok attribution questions (use tiktok-attribution-guide).
+description: "This skill should be used when the user asks to \"look up TikTok benchmarks\", \"compare TikTok CPM to industry average\", \"check TikTok Spark Ads benchmarks\", or mentions \"is my TikTok CTR good\", \"TikTok ROAS benchmark\", or \"TikTok Shop performance standards\". Do NOT use for: TikTok creative fatigue detection (use tiktok-creative-fatigue-tracker), TikTok video hook/length optimization (use tiktok-video-performance-analyzer), or TikTok attribution questions (use tiktok-attribution-guide)."
 ---
 # TikTok Ads Benchmark Database
 

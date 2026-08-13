@@ -17,7 +17,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds
   LOW_VIEW_RATE: 0.20,           // Alert if view rate < 20%

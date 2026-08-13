@@ -1,10 +1,6 @@
 ---
 name: google-ads-shopping-feed-optimizer
-description: |
-  This skill should be used when the user asks to "optimize Shopping feed", "fix product disapprovals",
-  "improve product titles", "set up custom labels", or mentions "Merchant Center",
-  "feed rules", "product data quality", or "free listings optimization".
-  Do NOT use for: Shopping campaign structure advice (use shopping-campaign-structure-advisor), PMax retail optimization (use pmax-retail-optimizer), general PMax setup (use performance-max-optimizer).
+description: "This skill should be used when the user asks to \"optimize Shopping feed\", \"fix product disapprovals\", \"improve product titles\", \"set up custom labels\", or mentions \"Merchant Center\", \"feed rules\", \"product data quality\", or \"free listings optimization\". Do NOT use for: Shopping campaign structure advice (use shopping-campaign-structure-advisor), PMax retail optimization (use pmax-retail-optimizer), general PMax setup (use performance-max-optimizer)."
 ---
 # Shopping Feed Optimizer
 
@@ -498,7 +494,7 @@ Fix:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   ALERT_THRESHOLD: 10  // Alert if >10 new disapprovals
 };
 

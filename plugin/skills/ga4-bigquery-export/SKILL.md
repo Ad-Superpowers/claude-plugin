@@ -1,9 +1,6 @@
 ---
 name: ga4-bigquery-export
-description: |
-  This skill should be used when the user asks to "export GA4 to BigQuery", "query raw GA4 event data",
-  "set up BigQuery linking", or mentions "GA4 data warehouse", "BigQuery dashboard", or "unsampled GA4 data".
-  Do NOT use for: GA4 Data API reporting (use ga4-api-reporting), standard GA4 UI reports (use ga4-revenue-analysis).
+description: "This skill should be used when the user asks to \"export GA4 to BigQuery\", \"query raw GA4 event data\", \"set up BigQuery linking\", or mentions \"GA4 data warehouse\", \"BigQuery dashboard\", or \"unsampled GA4 data\". Do NOT use for: GA4 Data API reporting (use ga4-api-reporting), standard GA4 UI reports (use ga4-revenue-analysis)."
 ---
 # GA4 BigQuery Export Guide
 

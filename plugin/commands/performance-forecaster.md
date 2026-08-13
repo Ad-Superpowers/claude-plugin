@@ -1,5 +1,5 @@
 ---
-description: Predicts future campaign performance using historical platform data, seasonality patterns, and trend analysis. Uses Monte Carlo-style uncertainty modeling to provide confidence intervals for projected spend, conversions, and ROAS. Helps set realistic expectations and plan for multiple scenarios. (requires Pro subscription)
+description: "Predicts future campaign performance using historical platform data, seasonality patterns, and trend analysis. Uses Monte Carlo-style uncertainty modeling to provide confidence intervals for projected spend, conversions, and ROAS. Helps set realistic expectations and plan for multiple scenarios. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -15,8 +15,14 @@ Generate performance forecasts with confidence intervals for [specify company_na
 
 **Forecast Period:** Next 90 days
 **Monthly Budget:** EUR10,000
+
+> Conditional: if meta_account_id
 **Meta Account:** [specify meta_account_id]
+
+> Conditional: if google_ads_customer_id
 **Google Ads:** [specify google_ads_customer_id]
+
+> Conditional: if ga4_property_id
 **GA4 Property:** [specify ga4_property_id]
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)

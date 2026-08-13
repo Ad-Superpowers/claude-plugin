@@ -139,7 +139,7 @@ OPPORTUNITY COST ESTIMATE:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds
   MIN_CTR: 0.02,           // 2% minimum CTR

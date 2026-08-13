@@ -1,15 +1,6 @@
 ---
 name: client-context-onboarding
-description: |
-  This skill should be used when the user asks to "onboard a new client",
-  "set up client context", "get all my clients into context", "populate
-  client X's budgets/goals/accounts", or wants to import and group their
-  connected ad accounts into client profiles so reports and media-buying
-  become client-aware.
-  Do NOT use for: the app signup/onboarding UI wizard (dashboard work, out of
-  scope), user-account onboarding emails (separate track), or single-platform
-  campaign builds (use platform-specific skills). For the agency 30/60/90-day
-  operational checklist use client-onboarding-checklist instead.
+description: "This skill should be used when the user asks to \"onboard a new client\", \"set up client context\", \"get all my clients into context\", \"populate client X's budgets/goals/accounts\", or wants to import and group their connected ad accounts into client profiles so reports and media-buying become client-aware. Do NOT use for: the app signup/onboarding UI wizard (dashboard work, out of scope), user-account onboarding emails (separate track), or single-platform campaign builds (use platform-specific skills). For the agency 30/60/90-day operational checklist use client-onboarding-checklist instead."
 allowed-tools: clients, clients_update, meta_list_ad_accounts, google_ads_list_accounts, ga4_list_properties, gsc_list_sites, linkedin_list_ad_accounts, tiktok_get_advertiser_info, meta_get_insights, google_ads_run_gaql, ga4_run_report, skill, workflow
 ---
 
@@ -137,7 +128,7 @@ For each planned client, match against the `clients(action="list")` from step 1:
 - **New** → `clients_update(action="create", name=..., status="draft", ...)`.
 
 Handle `limit_reached` per client: skip that one, continue with the rest, and report
-at the end which clients did not fit, with an upgrade hint. If a `clients` read
+at the end which clients did not fit because the plan limit was reached. If a `clients` read
 returns a `decryption_failed` envelope for an existing client, never overwrite it;
 report it and skip.
 

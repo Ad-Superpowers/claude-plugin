@@ -1,11 +1,6 @@
 ---
 name: meta-attribution-window-advisor
-description: |
-  This skill should be used when the user asks to "choose an attribution window",
-  "compare click vs view-through attribution", "set up incremental attribution", or mentions
-  "Meta attribution settings", "iOS 14 attribution", or "attribution window configuration".
-  Do NOT use for: cross-platform attribution reconciliation (use cross-platform-attribution-reconciler),
-  CAPI setup (use capi-implementation-guide), EMQ optimization (use emq-optimizer).
+description: "This skill should be used when the user asks to \"choose an attribution window\", \"compare click vs view-through attribution\", \"set up incremental attribution\", or mentions \"Meta attribution settings\", \"iOS 14 attribution\", or \"attribution window configuration\". Do NOT use for: cross-platform attribution reconciliation (use cross-platform-attribution-reconciler), CAPI setup (use capi-implementation-guide), EMQ optimization (use emq-optimizer)."
 ---
 # Attribution Window Advisor
 

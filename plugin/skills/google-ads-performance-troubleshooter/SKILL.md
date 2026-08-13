@@ -1,10 +1,6 @@
 ---
 name: google-ads-performance-troubleshooter
-description: |
-  This skill should be used when the user asks to "troubleshoot Google Ads performance",
-  "diagnose CPA increase", "fix conversion drops", "investigate impression share decline",
-  or mentions "ROAS degradation", "budget issues", or "performance problems".
-  Do NOT use for: full account audits (use account-auditor), keyword strategy planning (use keyword-strategy-planner).
+description: "This skill should be used when the user asks to \"troubleshoot Google Ads performance\", \"diagnose CPA increase\", \"fix conversion drops\", \"investigate impression share decline\", or mentions \"ROAS degradation\", \"budget issues\", or \"performance problems\". Do NOT use for: full account audits (use account-auditor), keyword strategy planning (use keyword-strategy-planner)."
 ---
 # Performance Troubleshooter
 

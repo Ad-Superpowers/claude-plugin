@@ -1,5 +1,5 @@
 ---
-description: Comprehensive landing page analysis combining page crawling, GA4 performance data, and CRO best practices. Identifies conversion opportunities and provides actionable recommendations. (requires Pro subscription)
+description: "Comprehensive landing page analysis combining page crawling, GA4 performance data, and CRO best practices. Identifies conversion opportunities and provides actionable recommendations. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -16,7 +16,11 @@ Analyze [specify landing_page_url] for conversion optimization.
 **Objective:** [specify campaign_objective]
 **Audience:** Not specified
 **Industry:** General
+
+> Conditional: if ad_copy
 **Ad Copy:** [specify ad_copy]
+
+> Conditional: if ga4_property_id
 **GA4 Property:** [specify ga4_property_id]
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)

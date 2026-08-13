@@ -1,5 +1,5 @@
 ---
-description: Automatically detect unusual performance shifts across all accounts with severity levels, budget impact estimation, vertical seasonality context, and action urgency indicators. Catches issues before they become expensive problems. (requires Pro subscription)
+description: "Automatically detect unusual performance shifts across all accounts with severity levels, budget impact estimation, vertical seasonality context, and action urgency indicators. Catches issues before they become expensive problems. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 

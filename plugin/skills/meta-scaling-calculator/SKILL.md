@@ -1,11 +1,6 @@
 ---
 name: meta-scaling-calculator
-description: |
-  This skill should be used when the user asks to "scale a campaign", "calculate budget increments",
-  "plan a scaling timeline", or mentions "scaling without losing performance",
-  "Meta Ads scaling strategy", or "budget increase risk". Do NOT use for: bid strategy
-  selection (use bid-strategy-selector), budget allocation across funnel
-  (use full-funnel-designer), performance diagnostics (use performance-troubleshooter).
+description: "This skill should be used when the user asks to \"scale a campaign\", \"calculate budget increments\", \"plan a scaling timeline\", or mentions \"scaling without losing performance\", \"Meta Ads scaling strategy\", or \"budget increase risk\". Do NOT use for: bid strategy selection (use bid-strategy-selector), budget allocation across funnel (use full-funnel-designer), performance diagnostics (use performance-troubleshooter)."
 ---
 # Scaling Calculator
 

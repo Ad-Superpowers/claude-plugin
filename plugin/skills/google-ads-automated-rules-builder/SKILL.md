@@ -1,11 +1,6 @@
 ---
 name: google-ads-automated-rules-builder
-description: |
-  This skill should be used when the user asks to "create automated rules in Google Ads",
-  "set up budget management automation", "configure bid adjustment rules",
-  "build performance alerts", or mentions "scheduling automation",
-  "scripts vs rules", or "Google Ads automation".
-  Do NOT use for: Meta Ads rules (use meta-automated-rules-builder), Google Ads Scripts only (use google-ads-scripts-library), or bid strategy selection (use bid-strategy-selector).
+description: "This skill should be used when the user asks to \"create automated rules in Google Ads\", \"set up budget management automation\", \"configure bid adjustment rules\", \"build performance alerts\", or mentions \"scheduling automation\", \"scripts vs rules\", or \"Google Ads automation\". Do NOT use for: Meta Ads rules (use meta-automated-rules-builder), Google Ads Scripts only (use google-ads-scripts-library), or bid strategy selection (use bid-strategy-selector)."
 ---
 # Automated Rules Builder
 

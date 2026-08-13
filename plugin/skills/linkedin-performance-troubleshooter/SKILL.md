@@ -1,10 +1,6 @@
 ---
 name: linkedin-performance-troubleshooter
-description: |
-  This skill should be used when the user asks to "fix LinkedIn ad performance",
-  "diagnose high LinkedIn CPL", "fix LinkedIn ads not spending", or mentions
-  "LinkedIn low engagement", "LinkedIn performance drop", or "reduce LinkedIn ad costs".
-  Do NOT use for: LinkedIn bid strategy selection (use linkedin-bid-strategy-selector), LinkedIn lead gen form optimization (use linkedin-lead-gen-optimizer), or LinkedIn benchmark lookups (use linkedin-benchmark-database).
+description: "This skill should be used when the user asks to \"fix LinkedIn ad performance\", \"diagnose high LinkedIn CPL\", \"fix LinkedIn ads not spending\", or mentions \"LinkedIn low engagement\", \"LinkedIn performance drop\", or \"reduce LinkedIn ad costs\". Do NOT use for: LinkedIn bid strategy selection (use linkedin-bid-strategy-selector), LinkedIn lead gen form optimization (use linkedin-lead-gen-optimizer), or LinkedIn benchmark lookups (use linkedin-benchmark-database)."
 ---
 # LinkedIn Ads Performance Troubleshooter
 

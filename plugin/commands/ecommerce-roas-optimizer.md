@@ -1,5 +1,5 @@
 ---
-description: Deep-dive analysis for e-commerce businesses. Analyze product-level ROAS via Meta Shopping, Google Shopping/PMax and GA4 e-commerce data, identify winners/losers, and get actionable recommendations. (requires Pro subscription)
+description: "Deep-dive analysis for e-commerce businesses. Analyze product-level ROAS via Meta Shopping, Google Shopping/PMax and GA4 e-commerce data, identify winners/losers, and get actionable recommendations. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -11,7 +11,9 @@ disable-model-invocation: true
 
 # E-commerce ROAS Optimizer
 
-Analyze e-commerce ad performance for last 30 days, focusing on [specify product_category].
+Analyze e-commerce ad performance for last 30 days
+> Conditional: if product_category
+, focusing on [specify product_category].
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 

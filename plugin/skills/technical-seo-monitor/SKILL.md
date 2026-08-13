@@ -1,9 +1,6 @@
 ---
 name: technical-seo-monitor
-description: |
-  This skill should be used when the user asks to "fix indexing problems", "check sitemap health",
-  "diagnose crawl issues", or mentions "pages not appearing in Google", "canonical URL conflicts", or "technical SEO audit".
-  Do NOT use for: organic search performance analysis or CTR optimization (use gsc-performance-analyzer).
+description: "This skill should be used when the user asks to \"fix indexing problems\", \"check sitemap health\", \"diagnose crawl issues\", or mentions \"pages not appearing in Google\", \"canonical URL conflicts\", or \"technical SEO audit\". Do NOT use for: organic search performance analysis or CTR optimization (use gsc-performance-analyzer)."
 ---
 # Technical SEO Monitor
 

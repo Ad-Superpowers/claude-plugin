@@ -1,12 +1,6 @@
 ---
 name: gtm-consent-mode-guide
-description: |
-  This skill should be used when the user asks to "implement Consent Mode v2",
-  "integrate a CMP with GTM", "recover data lost to cookie consent",
-  "set up consent_default and consent_update", or mentions "TCF 2.2",
-  "behavioral modeling", or "Enhanced Conversions for consent".
-  Do NOT use for: GTM tag/trigger setup (use gtm-conversion-setup-guide), server-side tagging
-  (use gtm-server-side-tagging-guide), or strategic tracking planning (use tracking-plan-builder).
+description: "This skill should be used when the user asks to \"implement Consent Mode v2\", \"integrate a CMP with GTM\", \"recover data lost to cookie consent\", \"set up consent_default and consent_update\", or mentions \"TCF 2.2\", \"behavioral modeling\", or \"Enhanced Conversions for consent\". Do NOT use for: GTM tag/trigger setup (use gtm-conversion-setup-guide), server-side tagging (use gtm-server-side-tagging-guide), or strategic tracking planning (use tracking-plan-builder)."
 ---
 
 # GTM Consent Mode v2 Guide
@@ -166,7 +160,7 @@ Regardless of which CMP you use, the integration follows the same pattern in GTM
    a. Sets consent_default (all denied for EEA)
    b. Checks for stored consent (returning visitor)
    c. If stored consent exists: fires consent_update immediately
-   d. If no stored consent: shows banner, fires consent_update on interaction
+   d. If there is no prior consent choice: shows banner, fires consent_update on interaction
 
 5. All Google tags use Built-in Consent Checks:
    - GA4 tags: require analytics_storage

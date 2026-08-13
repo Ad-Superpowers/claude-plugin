@@ -1,10 +1,6 @@
 ---
 name: tiktok-learning-phase-tracker
-description: |
-  This skill should be used when the user asks to "manage TikTok learning phase",
-  "fix TikTok learning limited status", "predict TikTok edit impact", or mentions
-  "TikTok ad group stuck in learning", "TikTok 50 conversions requirement", or "when to edit TikTok campaigns".
-  Do NOT use for: TikTok creative fatigue detection (use tiktok-creative-fatigue-tracker), TikTok benchmark lookups (use tiktok-benchmark-database), or TikTok attribution questions (use tiktok-attribution-guide).
+description: "This skill should be used when the user asks to \"manage TikTok learning phase\", \"fix TikTok learning limited status\", \"predict TikTok edit impact\", or mentions \"TikTok ad group stuck in learning\", \"TikTok 50 conversions requirement\", or \"when to edit TikTok campaigns\". Do NOT use for: TikTok creative fatigue detection (use tiktok-creative-fatigue-tracker), TikTok benchmark lookups (use tiktok-benchmark-database), or TikTok attribution questions (use tiktok-attribution-guide)."
 ---
 # TikTok Learning Phase Tracker
 

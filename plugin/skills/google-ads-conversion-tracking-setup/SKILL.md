@@ -1,10 +1,6 @@
 ---
 name: google-ads-conversion-tracking-setup
-description: |
-  This skill should be used when the user asks to "set up conversion tracking", "implement Google Tag",
-  "configure Enhanced Conversions", "import offline conversions", or mentions "gtag setup",
-  "conversion value tracking", or "primary vs secondary conversions".
-  Do NOT use for: debugging existing tracking issues (use conversion-tracking-debugger), Meta pixel setup (use meta tools), GA4 event setup (use ga4 tools).
+description: "This skill should be used when the user asks to \"set up conversion tracking\", \"implement Google Tag\", \"configure Enhanced Conversions\", \"import offline conversions\", or mentions \"gtag setup\", \"conversion value tracking\", or \"primary vs secondary conversions\". Do NOT use for: debugging existing tracking issues (use conversion-tracking-debugger), Meta pixel setup (use meta tools), GA4 event setup (use ga4 tools)."
 ---
 # Conversion Tracking Setup
 
@@ -298,7 +294,7 @@ FIELDS (minimum email):
 <script>
   // Method 1: Via gtag set command (recommended)
   gtag('set', 'user_data', {
-    'email': 'customer@email.com',         // Plain text or SHA256
+    'email': 'customer@example.com',         // Plain text or SHA256
     'phone_number': '+31612345678',       // E.164 format
     'address': {
       'first_name': 'John',
@@ -332,7 +328,7 @@ FIELDS (minimum email):
   }
 
   async function sendConversion() {
-    const hashedEmail = await hashData('customer@email.com');
+    const hashedEmail = await hashData('customer@example.com');
 
     gtag('set', 'user_data', {
       'sha256_email_address': hashedEmail
@@ -482,7 +478,7 @@ EAIaIQobChMI...,Closed Won,2025-01-28 15:45:00,5000,EUR
 
 # CSV FORMAT FOR ENHANCED CONVERSIONS FOR LEADS
 Email,Conversion Name,Conversion Time,Conversion Value,Conversion Currency
-customer@email.com,Qualified Lead,2025-01-28 14:30:00,50,EUR
+customer@example.com,Qualified Lead,2025-01-28 14:30:00,50,EUR
 ```
 
 

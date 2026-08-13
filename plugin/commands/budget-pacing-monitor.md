@@ -1,5 +1,5 @@
 ---
-description: Real-time budget tracking with end-of-month projections. Prevent overspend and underspend surprises with velocity anomaly detection.
+description: "Real-time budget tracking with end-of-month projections. Prevent overspend and underspend surprises with velocity anomaly detection."
 disable-model-invocation: true
 ---
 
@@ -11,7 +11,7 @@ disable-model-invocation: true
 
 # Budget Pacing Monitor
 
-Monitor budget pacing across all connected ad accounts. Alert threshold: {{ alert_threshold | default(15) }}%.
+Monitor budget pacing across all connected ad accounts. Alert threshold: 15%.
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 
@@ -126,8 +126,8 @@ if velocity_ratio > 1.5 or velocity_ratio < 0.5:
 Follow OUTPUT FORMAT above EXACTLY. Include all tables with real data.
 
 Flag immediately if:
-- Projected overspend >{{ alert_threshold | default(15) }}% before month end
-- Projected underspend >{{ alert_threshold | default(15) }}% before month end
+- Projected overspend >15% before month end
+- Projected underspend >15% before month end
 - Daily spend >150% or <50% of 7-day average (velocity anomaly)
 - Budget exhaustion projected before month end
 

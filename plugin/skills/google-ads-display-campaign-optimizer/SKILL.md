@@ -1,11 +1,6 @@
 ---
 name: google-ads-display-campaign-optimizer
-description: |
-  This skill should be used when the user asks to "optimize Display campaigns",
-  "set up Responsive Display Ads", "configure display placement targeting",
-  "improve viewability", or mentions "GDN", "banner formats",
-  "brand safety", or "Display Network".
-  Do NOT use for: search campaign optimization (use search-campaign-optimizer), Performance Max setup (use pmax-strategy-builder), or bid strategy selection (use bid-strategy-selector).
+description: "This skill should be used when the user asks to \"optimize Display campaigns\", \"set up Responsive Display Ads\", \"configure display placement targeting\", \"improve viewability\", or mentions \"GDN\", \"banner formats\", \"brand safety\", or \"Display Network\". Do NOT use for: search campaign optimization (use search-campaign-optimizer), Performance Max setup (use pmax-strategy-builder), or bid strategy selection (use bid-strategy-selector)."
 ---
 # Display Campaign Optimizer
 

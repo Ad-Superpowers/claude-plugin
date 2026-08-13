@@ -1,5 +1,5 @@
 ---
-description: AI-powered channel selection advisor that matches campaign objectives with optimal platform mix. Analyzes audience fit, platform strengths, funnel stage requirements, and budget constraints to recommend the ideal channel strategy. Includes budget allocation suggestions and expected performance benchmarks per channel. (requires Pro subscription)
+description: "AI-powered channel selection advisor that matches campaign objectives with optimal platform mix. Analyzes audience fit, platform strengths, funnel stage requirements, and budget constraints to recommend the ideal channel strategy. Includes budget allocation suggestions and expected performance benchmarks per channel. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -11,7 +11,15 @@ disable-model-invocation: true
 
 # Channel Strategy Advisor
 
-Recommend the optimal advertising channel mix for [specify company_name] ([specify industry]) with objective **[specify primary_objective]** and EUR10,000/month budget. Geography: Netherlands / Europe. Audience: [specify target_audience]. Product type: [specify product_type]. Current channels: [specify existing_channels]. Sales cycle: [specify sales_cycle].
+Recommend the optimal advertising channel mix for [specify company_name] ([specify industry]) with objective **[specify primary_objective]** and EUR10,000/month budget. Geography: Netherlands / Europe.
+> Conditional: if target_audience
+ Audience: [specify target_audience].
+> Conditional: if product_type
+ Product type: [specify product_type].
+> Conditional: if existing_channels
+ Current channels: [specify existing_channels].
+> Conditional: if sales_cycle
+ Sales cycle: [specify sales_cycle].
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 

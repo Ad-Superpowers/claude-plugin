@@ -1,11 +1,6 @@
 ---
 name: ecommerce-funnel-optimizer
-description: |
-  This skill should be used when the user asks to "build an e-commerce ad funnel",
-  "optimize retargeting windows", "set ROAS targets by funnel stage",
-  "recover abandoned carts with ads", or mentions "dynamic product ads",
-  "Advantage+ Catalog Ads", or "seasonal ad strategy".
-  Do NOT use for: single-platform campaign structure (use platform-specific skills), attribution discrepancies (use attribution-reconciler), or creative fatigue diagnosis (use creative-fatigue-analyzer).
+description: "This skill should be used when the user asks to \"build an e-commerce ad funnel\", \"optimize retargeting windows\", \"set ROAS targets by funnel stage\", \"recover abandoned carts with ads\", or mentions \"dynamic product ads\", \"Advantage+ Catalog Ads\", or \"seasonal ad strategy\". Do NOT use for: single-platform campaign structure (use platform-specific skills), attribution discrepancies (use attribution-reconciler), or creative fatigue diagnosis (use creative-fatigue-analyzer)."
 ---
 
 # E-Commerce Funnel Optimizer

@@ -1,11 +1,6 @@
 ---
 name: meta-video-script-writer
-description: |
-  This skill should be used when the user asks to "write a video script", "create a Reels script",
-  "script a Stories ad", or mentions "video ad script", "UGC script",
-  or "hook structure for video". Do NOT use for: ad copy text (use ad-copy-generator),
-  creative brainstorming (use creative-diversification-generator), A/B test design
-  (use ab-test-planner).
+description: "This skill should be used when the user asks to \"write a video script\", \"create a Reels script\", \"script a Stories ad\", or mentions \"video ad script\", \"UGC script\", or \"hook structure for video\". Do NOT use for: ad copy text (use ad-copy-generator), creative brainstorming (use creative-diversification-generator), A/B test design (use ab-test-planner)."
 ---
 # Video Script Writer
 

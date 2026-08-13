@@ -1,5 +1,5 @@
 ---
-description: Compare advertising performance across Meta, Google, LinkedIn, and TikTok with attribution reconciliation, incrementality analysis, and competitive context. Includes expected discrepancy ranges, 'which number to trust' guidance, iROAS framework (incremental ROAS estimates by platform), MMM-lite recommendations, privacy-adjusted confidence framework, specific budget reallocation recommendations, reach/frequency analysis, EU vs US benchmarks, and optional competitive position analysis via Google Ads auction insights. (requires Pro subscription)
+description: "Compare advertising performance across Meta, Google, LinkedIn, and TikTok with attribution reconciliation, incrementality analysis, and competitive context. Includes expected discrepancy ranges, 'which number to trust' guidance, iROAS framework (incremental ROAS estimates by platform), MMM-lite recommendations, privacy-adjusted confidence framework, specific budget reallocation recommendations, reach/frequency analysis, EU vs US benchmarks, and optional competitive position analysis via Google Ads auction insights. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 

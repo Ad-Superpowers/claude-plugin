@@ -1,11 +1,6 @@
 ---
 name: tiktok-audience-strategy
-description: |
-  This skill should be used when the user asks to "build TikTok audiences",
-  "choose TikTok lookalike size", "set up TikTok custom audiences",
-  "decide between broad and narrow targeting on TikTok", or mentions
-  "TikTok audience strategy", "audience refresh cadence", or "TikTok interest targeting".
-  Do NOT use for: creative optimization (use tiktok-hook-optimization-guide), Spark Ads strategy (use tiktok-spark-ads-strategy), or product/shopping ads (use tiktok-shopping-ads-guide).
+description: "This skill should be used when the user asks to \"build TikTok audiences\", \"choose TikTok lookalike size\", \"set up TikTok custom audiences\", \"decide between broad and narrow targeting on TikTok\", or mentions \"TikTok audience strategy\", \"audience refresh cadence\", or \"TikTok interest targeting\". Do NOT use for: creative optimization (use tiktok-hook-optimization-guide), Spark Ads strategy (use tiktok-spark-ads-strategy), or product/shopping ads (use tiktok-shopping-ads-guide)."
 ---
 
 # TikTok Audience Strategy

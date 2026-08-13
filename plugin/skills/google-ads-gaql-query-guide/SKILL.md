@@ -1,9 +1,6 @@
 ---
 name: google-ads-gaql-query-guide
-description: |
-  This skill should be used when the user asks to "write a GAQL query", "build a Google Ads report",
-  "select metrics and dimensions", "filter by date range in GAQL", or mentions "video_views",
-  "campaign_search_term_view", "LAST_90_DAYS", or "Google Ads Query Language".
+description: "This skill should be used when the user asks to \"write a GAQL query\", \"build a Google Ads report\", \"select metrics and dimensions\", \"filter by date range in GAQL\", or mentions \"video_views\", \"campaign_search_term_view\", \"LAST_90_DAYS\", or \"Google Ads Query Language\"."
 ---
 # GAQL Query Guide (API v23)
 

@@ -1,11 +1,6 @@
 ---
 name: meta-catalog-optimizer
-description: |
-  This skill should be used when the user asks to "optimize product catalog", "improve catalog ad performance",
-  "fix catalog feed issues", or mentions "Advantage+ Catalog Ads", "product set strategy",
-  or "catalog feed optimization". Do NOT use for: campaign structure
-  (use campaign-structure-advisor), creative diversification
-  (use creative-diversification-generator), full-funnel design (use full-funnel-designer).
+description: "This skill should be used when the user asks to \"optimize product catalog\", \"improve catalog ad performance\", \"fix catalog feed issues\", or mentions \"Advantage+ Catalog Ads\", \"product set strategy\", or \"catalog feed optimization\". Do NOT use for: campaign structure (use campaign-structure-advisor), creative diversification (use creative-diversification-generator), full-funnel design (use full-funnel-designer)."
 ---
 # Catalog Optimizer
 
@@ -13,7 +8,7 @@ description: |
 
 This skill helps optimize Meta Product Catalogs for maximum Advantage+ Catalog Ads and Advantage+ Sales performance, including feed optimization, product set strategies, and troubleshooting of common issues.
 
-> **Heads-up — catalog ads are not creatable through MCP yet.** The AdSuperpowers catalog tools are read-only (`meta_catalog_query` for catalogs, product sets, and product-set items). There is no tool to create a catalog / Advantage+ catalog ad. Use this skill for feed and product-set **strategy and diagnosis**, then build the catalog ad in Ads Manager. For non-catalog ad creation via MCP, `use ad-launch-playbook`.
+> **Heads-up: catalog data is not reachable through MCP yet.** This release ships no catalog tool, so catalogs, product sets, and product-set items can be neither read nor created through Ad Superpowers. Use this skill for feed and product-set **strategy and diagnosis**, then build and inspect the catalog ad in Ads Manager. For non-catalog ad creation via MCP, `use ad-launch-playbook`.
 
 ## Catalog Fundamentals
 

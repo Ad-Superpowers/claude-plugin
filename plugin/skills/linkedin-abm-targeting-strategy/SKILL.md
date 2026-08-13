@@ -1,10 +1,6 @@
 ---
 name: linkedin-abm-targeting-strategy
-description: |
-  This skill should be used when the user asks to "target specific companies on LinkedIn",
-  "build an ABM campaign", "reach the buying committee", "create a company list for LinkedIn",
-  or mentions "account-based marketing", "decision-maker targeting", or "account penetration".
-  Do NOT use for: general LinkedIn campaign optimization (use linkedin-performance-troubleshooter), lead form strategy (use linkedin-lead-gen-optimizer), or campaign scaling (use linkedin-campaign-scaling-guide).
+description: "This skill should be used when the user asks to \"target specific companies on LinkedIn\", \"build an ABM campaign\", \"reach the buying committee\", \"create a company list for LinkedIn\", or mentions \"account-based marketing\", \"decision-maker targeting\", or \"account penetration\". Do NOT use for: general LinkedIn campaign optimization (use linkedin-performance-troubleshooter), lead form strategy (use linkedin-lead-gen-optimizer), or campaign scaling (use linkedin-campaign-scaling-guide)."
 ---
 
 # LinkedIn ABM Targeting Strategy

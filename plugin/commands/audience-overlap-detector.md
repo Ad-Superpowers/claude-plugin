@@ -1,5 +1,5 @@
 ---
-description: Detect audience overlap issues in Meta campaigns. Find where you're competing against yourself and wasting budget. (requires Pro subscription)
+description: "Detect audience overlap issues in Meta campaigns. Find where you're competing against yourself and wasting budget. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -11,7 +11,9 @@ disable-model-invocation: true
 
 # Audience Overlap Detector
 
-Detect and resolve audience overlap in Meta Ads campaigns with detailed fix recommendations.
+Detect and resolve audience overlap in Meta Ads campaigns
+> Conditional: if include_recommendations
+ with detailed fix recommendations.
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 

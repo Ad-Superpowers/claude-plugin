@@ -18,7 +18,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   IMPRESSION_SHARE_DROP_THRESHOLD: -0.15,
   CPC_INCREASE_THRESHOLD: 0.20,
   POSITION_DROP_THRESHOLD: 0.5,

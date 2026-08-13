@@ -1,12 +1,6 @@
 ---
 name: gtm-conversion-setup-guide
-description: |
-  This skill should be used when the user asks to "set up conversion tags in GTM",
-  "configure a Meta Pixel trigger", "debug a tag not firing",
-  "add Google Ads conversion tracking in GTM", or mentions "GTM tag setup",
-  "trigger conditions", or "LinkedIn Insight Tag".
-  Do NOT use for: strategic tracking planning (use tracking-plan-builder), server-side tagging
-  (use gtm-server-side-tagging-guide), or consent implementation (use gtm-consent-mode-guide).
+description: "This skill should be used when the user asks to \"set up conversion tags in GTM\", \"configure a Meta Pixel trigger\", \"debug a tag not firing\", \"add Google Ads conversion tracking in GTM\", or mentions \"GTM tag setup\", \"trigger conditions\", or \"LinkedIn Insight Tag\". Do NOT use for: strategic tracking planning (use tracking-plan-builder), server-side tagging (use gtm-server-side-tagging-guide), or consent implementation (use gtm-consent-mode-guide)."
 ---
 
 # GTM Conversion Setup Guide

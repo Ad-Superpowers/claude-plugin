@@ -1,10 +1,6 @@
 ---
 name: google-ads-performance-max-optimizer
-description: |
-  This skill should be used when the user asks to "set up Performance Max", "optimize PMax campaigns",
-  "configure audience signals", "choose search themes", or mentions "PMax asset group strategy",
-  "channel performance breakdown", or "e-commerce vs lead gen PMax".
-  Do NOT use for: PMax audit scoring (use pmax-audit-checklist), PMax retail-specific optimization (use pmax-retail-optimizer), PMax vs Search cannibalization (use pmax-search-cannibalization-detector).
+description: "This skill should be used when the user asks to \"set up Performance Max\", \"optimize PMax campaigns\", \"configure audience signals\", \"choose search themes\", or mentions \"PMax asset group strategy\", \"channel performance breakdown\", or \"e-commerce vs lead gen PMax\". Do NOT use for: PMax audit scoring (use pmax-audit-checklist), PMax retail-specific optimization (use pmax-retail-optimizer), PMax vs Search cannibalization (use pmax-search-cannibalization-detector)."
 ---
 # Performance Max Optimizer
 
@@ -263,7 +259,7 @@ See [decision-trees.md](references/decision-trees.md) for details.
 // === SETTINGS ===
 var SETTINGS = {
   // Email for alerts
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Performance thresholds
   CPA_INCREASE_THRESHOLD: 0.25,    // Alert on 25% CPA increase

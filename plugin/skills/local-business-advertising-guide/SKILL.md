@@ -1,11 +1,6 @@
 ---
 name: local-business-advertising-guide
-description: |
-  This skill should be used when the user asks to "advertise a local business",
-  "run ads for a restaurant or dentist", "set up Local Services Ads",
-  "target people in my city", or mentions "local business ads",
-  "small ad budget", or "Google Business Profile optimization".
-  Do NOT use for: e-commerce businesses selling online (use ecommerce-funnel-optimizer), national/international brands (use channel-selection-framework), or B2B SaaS companies (use platform-specific skills).
+description: "This skill should be used when the user asks to \"advertise a local business\", \"run ads for a restaurant or dentist\", \"set up Local Services Ads\", \"target people in my city\", or mentions \"local business ads\", \"small ad budget\", or \"Google Business Profile optimization\". Do NOT use for: e-commerce businesses selling online (use ecommerce-funnel-optimizer), national/international brands (use channel-selection-framework), or B2B SaaS companies (use platform-specific skills)."
 ---
 
 # Local Business Advertising Guide
@@ -438,7 +433,7 @@ DIY if:
   ✓ Simple service area (1 city, 1-2 services)
   ✓ You have 2-4 hours/month to manage
   ✓ You're willing to learn the basics
-  ✓ You can use tools like AdSuperpowers MCP for guidance
+  ✓ You can use tools like Ad Superpowers MCP for guidance
 
 Hire an agency if:
   ✓ Budget over €2,000/month (agency fee becomes worthwhile)

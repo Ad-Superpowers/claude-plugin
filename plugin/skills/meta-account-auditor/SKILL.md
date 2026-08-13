@@ -1,11 +1,6 @@
 ---
 name: meta-account-auditor
-description: |
-  This skill should be used when the user asks to "audit a Meta Ads account", "take over a new account",
-  "run a health check", or mentions "account audit", "periodic review",
-  or "Meta account health score". Do NOT use for: campaign structure advice
-  (use campaign-structure-advisor), performance troubleshooting (use performance-troubleshooter),
-  benchmark comparisons only (use benchmark-database).
+description: "This skill should be used when the user asks to \"audit a Meta Ads account\", \"take over a new account\", \"run a health check\", or mentions \"account audit\", \"periodic review\", or \"Meta account health score\". Do NOT use for: campaign structure advice (use campaign-structure-advisor), performance troubleshooting (use performance-troubleshooter), benchmark comparisons only (use benchmark-database)."
 ---
 # Account Auditor
 

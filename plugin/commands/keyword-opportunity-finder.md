@@ -1,5 +1,5 @@
 ---
-description: Discover new keyword opportunities in Google Ads. Analyze search terms, find gaps, and get bid recommendations. (requires Pro subscription)
+description: "Discover new keyword opportunities in Google Ads. Analyze search terms, find gaps, and get bid recommendations. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -12,6 +12,8 @@ disable-model-invocation: true
 # Keyword Opportunity Finder
 
 Discover keyword opportunities in Google Ads campaigns.
+
+> Conditional: if focus_campaign
 **Focus Campaign:** [specify focus_campaign]
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)

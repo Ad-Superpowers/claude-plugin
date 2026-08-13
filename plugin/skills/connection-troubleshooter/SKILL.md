@@ -1,20 +1,6 @@
 ---
 name: connection-troubleshooter
-description: >
-  This skill should be used when a user says the AdSuperpowers connector looks
-  broken or half-empty: "I only see a few tools", "my platform tools are
-  missing", "the connector isn't working", "I connected my account but nothing
-  shows up", "where are my Google Ads / Meta / GA4 tools", "a tool is not
-  callable / not available", or asks how to "reconnect" a platform. It explains
-  that a short tool list almost always means a connection needs (re)connecting —
-  not that the platform is broken — and walks through the exact fix (reconnect
-  the affected platform on the dashboard, then start a fresh chat). It covers the
-  Google specifics: Ads, Analytics, Search Console and Tag Manager are connected
-  individually, so each can go missing on its own and each may need its own
-  reconnect.
-  Do NOT use for: diagnosing campaign/ad performance (use the per-platform
-  performance-troubleshooter skills), billing/subscription questions, or
-  building/onboarding client profiles (use client-context-onboarding).
+description: "This skill should be used when a user says the Ad Superpowers connector looks broken or half-empty: \"I only see a few tools\", \"my platform tools are missing\", \"the connector isn't working\", \"I connected my account but nothing shows up\", \"where are my Google Ads / Meta / GA4 tools\", \"a tool is not callable / not available\", or asks how to \"reconnect\" a platform. It explains that a short tool list almost always means a connection needs (re)connecting \u2014 not that the platform is broken \u2014 and walks through the exact fix (reconnect the affected platform on the dashboard, then start a fresh chat). It covers the Google specifics: Ads, Analytics, Search Console and Tag Manager are connected individually, so each can go missing on its own and each may need its own reconnect. Do NOT use for: diagnosing campaign/ad performance (use the per-platform performance-troubleshooter skills), billing/subscription questions, or building/onboarding client profiles (use client-context-onboarding)."
 allowed-tools: skill, workflow, clients, clients_update
 ---
 
@@ -22,7 +8,7 @@ allowed-tools: skill, workflow, clients, clients_update
 
 ## Purpose
 
-Help a user who suddenly sees only a handful of AdSuperpowers tools (typically
+Help a user who suddenly sees only a handful of Ad Superpowers tools (typically
 just `workflow`, `skill`, and `clients`, sometimes with `clients_update`)
 understand what happened and fix it. In almost every case a short tool list
 means **a platform connection needs (re)connecting** — the dashboard may still
@@ -47,7 +33,7 @@ client onboarding — see the "Do NOT use for" note in the description.
 
 ## Why this happens (plain-language)
 
-AdSuperpowers only shows a platform's tools when it can actually reach that
+Ad Superpowers only shows a platform's tools when it can actually reach that
 platform on your behalf. To do that it uses the login you granted when you
 connected the account (an OAuth "grant"). Access to a platform is short-lived
 and is refreshed automatically in the background — but if that grant was
@@ -115,7 +101,7 @@ cares about most.
   same one.
 - If the tools still don't appear in a fresh chat, the account may not be
   selected for use, or the connection may belong to a different organization
-  than the one your API key resolves to. Contact AdSuperpowers support with the
+  than the one your API key resolves to. Contact Ad Superpowers support with the
   platform name and the account you expected to see.
 
 ## Key facts to remember

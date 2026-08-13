@@ -1,5 +1,5 @@
 ---
-description: Analyze Google Ads auction insights to understand competitive landscape. See who you're competing against and where you're winning or losing. (requires Pro subscription)
+description: "Analyze Google Ads auction insights to understand competitive landscape. See who you're competing against and where you're winning or losing. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -74,13 +74,17 @@ google_ads_run_gaql(
 )
 ```
 
-{% if focus_campaign_type == "brand" %}
-Filter to campaigns with brand terms (campaign name contains "brand", "branded", or the company name).
-{% elif focus_campaign_type == "non_brand" %}
-Exclude campaigns with brand terms.
-{% elif focus_campaign_type == "shopping" %}
-Use `campaign.advertising_channel_type = 'SHOPPING'` instead of SEARCH in queries.
+> Conditional: if focus_campaign_type == "brand"
 
+Filter to campaigns with brand terms (campaign name contains "brand", "branded", or the company name).
+
+> Otherwise, if focus_campaign_type == "non_brand"
+
+Exclude campaigns with brand terms.
+
+> Otherwise, if focus_campaign_type == "shopping"
+
+Use `campaign.advertising_channel_type = 'SHOPPING'` instead of SEARCH in queries.
 
 ### Step 4: Analyze and score
 - Calculate Competitive Strength Score per the formula above

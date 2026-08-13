@@ -1,10 +1,6 @@
 ---
 name: google-ads-pmax-audit-checklist
-description: |
-  This skill should be used when the user asks to "audit Performance Max", "review PMax health",
-  "score PMax campaigns", "evaluate asset group performance", or mentions "PMax scorecard",
-  "PMax health check", or "Ad Strength improvement".
-  Do NOT use for: PMax initial setup (use performance-max-optimizer), PMax retail-specific issues (use pmax-retail-optimizer), PMax vs Search cannibalization (use pmax-search-cannibalization-detector).
+description: "This skill should be used when the user asks to \"audit Performance Max\", \"review PMax health\", \"score PMax campaigns\", \"evaluate asset group performance\", or mentions \"PMax scorecard\", \"PMax health check\", or \"Ad Strength improvement\". Do NOT use for: PMax initial setup (use performance-max-optimizer), PMax retail-specific issues (use pmax-retail-optimizer), PMax vs Search cannibalization (use pmax-search-cannibalization-detector)."
 ---
 # PMax Audit Checklist
 

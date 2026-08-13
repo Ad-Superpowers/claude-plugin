@@ -1,11 +1,6 @@
 ---
 name: meta-automated-rules-builder
-description: |
-  This skill should be used when the user asks to "create automated rules", "set up budget protection",
-  "build performance rules", or mentions "Meta automated rules", "rule-based optimization",
-  or "auto-pause rules". Do NOT use for: bid strategy selection (use bid-strategy-selector),
-  workflow process optimization (use workflow-optimizer), campaign structure
-  (use campaign-structure-advisor).
+description: "This skill should be used when the user asks to \"create automated rules\", \"set up budget protection\", \"build performance rules\", or mentions \"Meta automated rules\", \"rule-based optimization\", or \"auto-pause rules\". Do NOT use for: bid strategy selection (use bid-strategy-selector), workflow process optimization (use workflow-optimizer), campaign structure (use campaign-structure-advisor)."
 ---
 # Automated Rules Builder
 

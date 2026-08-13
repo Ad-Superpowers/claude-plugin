@@ -15,7 +15,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   DATE_RANGE: 'LAST_30_DAYS',
   MIN_CONVERSIONS_PER_CAMPAIGN: 30,
   MIN_CONVERSIONS_PER_ADGROUP: 5,

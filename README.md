@@ -1,21 +1,22 @@
 # Ad Superpowers for Claude
 
-Manage, analyze, and optimize your ad campaigns across 7 platforms through natural language in Claude Code and Claude Desktop.
+Manage, analyze, and optimize your ad campaigns across 8 platforms through natural language in Claude Code and Claude Desktop.
 
-**120 expert skills** · **35 slash commands** (29 workflow, 6 utility) · **5 specialized agents** · **40 MCP tools**
+**120 expert skills** · **35 slash commands** (29 workflow, 6 utility) · **5 specialized agents** · **50 MCP tools**
 
 ## Platforms
 
 | Platform | Skills | MCP Tools | What you can do |
 |----------|-------:|----------:|------------------|
-| **Meta Ads** | 26 | 12 | Campaign management, creative fatigue analysis, audience targeting, ad creation, budget optimization |
+| **Meta Ads** | 26 | 14 | Campaign management, creative fatigue analysis, audience targeting, ad creation, budget optimization |
 | **Google Ads** | 32 | 4 | GAQL queries, Performance Max, keyword strategy, bid optimization, campaign creation |
 | **Google Analytics 4** | 18 | 2 | Event tracking, attribution models, audience building, ecommerce analysis |
 | **Google Search Console** | 2 | 3 | SEO performance, keyword rankings, indexing diagnostics, sitemap management |
 | **Google Tag Manager** | 4 | 4 | Container auditing, consent mode, server-side tagging, conversion setup |
-| **LinkedIn Ads** | 11 | 4 | B2B lead gen, ABM targeting, revenue attribution, Thought Leader Ads, CTV |
-| **TikTok Ads** | 10 | 7 | Creative fatigue, video performance, Smart+ campaigns, Search Ads, Shop |
-| **Cross-platform** | 17 | 4 | Unified `workflow`, `skill`, `clients`, and `clients_update` tools; client profiles, attribution reconciliation, SEO vs SEA gaps, budget allocation, competitive analysis |
+| **Google Merchant Center** | 0 | 3 | Feed accounts, product issues, disapprovals ranked by click potential, shopping performance (read-only) |
+| **LinkedIn Ads** | 11 | 5 | B2B lead gen, ABM targeting, revenue attribution, Thought Leader Ads, CTV |
+| **TikTok Ads** | 10 | 9 | Creative fatigue, video performance, Smart+ campaigns, Search Ads, Shop |
+| **Cross-platform** | 17 | 6 | Unified `workflow`, `skill`, `skill_update`, `workflow_update`, `clients`, and `clients_update` tools; client profiles, attribution reconciliation, SEO vs SEA gaps, budget allocation, competitive analysis |
 
 ## Install
 
@@ -59,7 +60,13 @@ If you want the full experience, use Claude Code or Cowork instead.
 
 ### ChatGPT
 
-ChatGPT supports the Ad Superpowers MCP server through the Apps Directory. Search for "Ad Superpowers" in the ChatGPT Apps interface and authorize access. You'll get the MCP tools but not the bundled skills, commands, or agents.
+ChatGPT can reach the Ad Superpowers MCP server as a custom connector. You'll get the MCP tools but not the bundled skills, commands, or agents.
+
+1. Open ChatGPT settings and go to connectors
+2. Add a custom connector pointing at `https://mcp.adsuperpowers.ai/v1`
+3. Complete the OAuth flow in your browser
+
+Whether custom connectors are available to you depends on your ChatGPT plan.
 
 ## Setup
 
@@ -142,7 +149,7 @@ This is consistent with other known Cowork plugin-loading issues tracked upstrea
 
 * All 120 skills load and auto-invoke on relevant questions
 * All 35 slash commands are discoverable and runnable
-* All 40 MCP tools are callable from the main conversation
+* MCP tools are callable from the main conversation, exactly as in any other client
 * All write operations (create campaign, duplicate ad, update budget) work
 * The agents' **prompts and logic** are also available as slash commands and skills — you get the same analysis, it just runs in the main context window instead of a separate subagent
 
@@ -154,27 +161,25 @@ No known limitations on 2.1.74+. All skills, commands, MCP tools, and subagents 
 
 ### Host compatibility matrix
 
-| Component | Claude Code CLI / VSCode | Cowork (Claude Desktop) | Claude Desktop (chat, via Connector) | ChatGPT (Apps) |
+| Component | Claude Code CLI / VSCode | Cowork (Claude Desktop) | Claude Desktop (chat, via Connector) | ChatGPT (via Connector) |
 |-----------|:---:|:---:|:---:|:---:|
 | 120 skills | ✅ | ✅ | ❌ | ❌ |
 | 35 commands | ✅ | ✅ | ❌ | ❌ |
-| 40 MCP tools | ✅ | ✅ | ✅ | ✅ |
+| 50 MCP tools | ✅ | ✅ | ✅ | ✅ |
 | 5 subagents | ✅ | ❌ (use skills instead) | ❌ | ❌ |
 
-## Pricing
+## Paid early access
 
 | Tier | Monthly | Annual | Tool calls/mo | Accounts | Users | Platforms |
 |------|--------:|-------:|--------------:|---------:|------:|-----------|
-| **Trial** | €0 (14-day) | — | 200 | 25 | 1 | All 7 |
-| **Pro** | €99 | €79 | 1,500 | 25 | 1 | All 7 |
-| **Team** | €249 | €199 | 6,000 | 100 | 5 | All 7 |
-| **Enterprise** | Custom | Custom | Unlimited | Unlimited | Unlimited | All plus custom integrations |
+| **Pro** | €99 | €79 | 1,500 | 25 | 1 | All 8 |
+| **Team** | €249 | €199 | 6,000 | 100 | 5 | All 8 |
 
-Trial requires a credit card and converts to Pro after 14 days unless cancelled. Annual plans get a 20% discount. A "tool call" is one MCP tool invocation; workflows that fan out to multiple tools count each invocation. Start at [adsuperpowers.ai](https://adsuperpowers.ai).
+Each organization can use one 14-day Pro or Team trial, capped at 200 tool calls. Trial requires a credit card and converts to the selected plan after 14 days unless cancelled. Annual plans get a 20% discount. A "tool call" is one MCP tool invocation; workflows that fan out to multiple tools count each invocation. Enterprise enquiries use custom usage and volume pricing. Start at [adsuperpowers.ai](https://adsuperpowers.ai).
 
 ## Security
 
-* OAuth authentication, credentials are never stored locally
+* OAuth authentication; platform credentials are held encrypted on our server, not on your machine
 * All API communication over HTTPS
 * Users can revoke platform access at any time
 * Per-user authentication in team environments

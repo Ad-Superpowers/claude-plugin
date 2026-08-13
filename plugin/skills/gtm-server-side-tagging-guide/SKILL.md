@@ -1,12 +1,6 @@
 ---
 name: gtm-server-side-tagging-guide
-description: |
-  This skill should be used when the user asks to "set up server-side GTM",
-  "implement Meta CAPI via sGTM", "migrate from client-side to server-side tagging",
-  "estimate sGTM hosting costs", or mentions "server-side tagging",
-  "sGTM", or "first-party data strategy".
-  Do NOT use for: client-side GTM tag setup (use gtm-conversion-setup-guide), strategic tracking planning
-  (use tracking-plan-builder), or consent mode implementation (use gtm-consent-mode-guide).
+description: "This skill should be used when the user asks to \"set up server-side GTM\", \"implement Meta CAPI via sGTM\", \"migrate from client-side to server-side tagging\", \"estimate sGTM hosting costs\", or mentions \"server-side tagging\", \"sGTM\", or \"first-party data strategy\". Do NOT use for: client-side GTM tag setup (use gtm-conversion-setup-guide), strategic tracking planning (use tracking-plan-builder), or consent mode implementation (use gtm-consent-mode-guide)."
 ---
 
 # Server-Side GTM Guide

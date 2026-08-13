@@ -85,7 +85,7 @@ Smart Bidding: Real-time bid optimization
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Account-level daily cap
   ACCOUNT_DAILY_CAP: 1000,  // €1000 per day
@@ -211,7 +211,7 @@ function sendAlert(subject, body) {
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Complex rule: Pause if ALL conditions met
   PAUSE_CONDITIONS: {

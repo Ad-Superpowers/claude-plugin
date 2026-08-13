@@ -12,7 +12,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Alert thresholds
   LEARNING_DAYS_WARNING: 14,  // Alert if >14 days in learning

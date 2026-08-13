@@ -1,11 +1,6 @@
 ---
 name: meta-emq-optimizer
-description: |
-  This skill should be used when the user asks to "improve EMQ score", "optimize event match quality",
-  "configure Advanced Matching", or mentions "EMQ", "Customer Information Parameters",
-  or "match quality diagnostics". Do NOT use for: CAPI implementation
-  (use capi-implementation-guide), attribution window configuration
-  (use attribution-window-advisor), pixel installation issues (use performance-troubleshooter).
+description: "This skill should be used when the user asks to \"improve EMQ score\", \"optimize event match quality\", \"configure Advanced Matching\", or mentions \"EMQ\", \"Customer Information Parameters\", or \"match quality diagnostics\". Do NOT use for: CAPI implementation (use capi-implementation-guide), attribution window configuration (use attribution-window-advisor), pixel installation issues (use performance-troubleshooter)."
 ---
 # EMQ Optimizer
 

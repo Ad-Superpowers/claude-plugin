@@ -1,9 +1,6 @@
 ---
 name: ga4-conversion-import
-description: |
-  This skill should be used when the user asks to "import GA4 conversions to Google Ads", "set up Smart Bidding conversions",
-  "configure conversion counting", or mentions "offline conversion import", "primary vs secondary conversions", or "GA4 to Google Ads export".
-  Do NOT use for: attribution model selection (use ga4-attribution-advisor), e-commerce event setup (use ga4-ecommerce-setup).
+description: "This skill should be used when the user asks to \"import GA4 conversions to Google Ads\", \"set up Smart Bidding conversions\", \"configure conversion counting\", or mentions \"offline conversion import\", \"primary vs secondary conversions\", or \"GA4 to Google Ads export\". Do NOT use for: attribution model selection (use ga4-attribution-advisor), e-commerce event setup (use ga4-ecommerce-setup)."
 ---
 # GA4 Conversion Import Guide
 

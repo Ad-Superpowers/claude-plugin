@@ -1,10 +1,6 @@
 ---
 name: google-ads-benchmark-database
-description: |
-  This skill should be used when the user asks to "compare performance to industry benchmarks",
-  "set KPI targets for a new account", "estimate CPA or ROAS by industry",
-  or mentions "Google Ads benchmarks", "seasonal CPC trends", or "industry averages".
-  Do NOT use for: real-time performance troubleshooting (use performance-troubleshooter), Quality Score optimization (use quality-score-optimizer), or campaign structure decisions (use campaign-structure-advisor).
+description: "This skill should be used when the user asks to \"compare performance to industry benchmarks\", \"set KPI targets for a new account\", \"estimate CPA or ROAS by industry\", or mentions \"Google Ads benchmarks\", \"seasonal CPC trends\", or \"industry averages\". Do NOT use for: real-time performance troubleshooting (use performance-troubleshooter), Quality Score optimization (use quality-score-optimizer), or campaign structure decisions (use campaign-structure-advisor)."
 ---
 # Benchmark Database
 

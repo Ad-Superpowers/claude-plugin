@@ -1,11 +1,6 @@
 ---
 name: google-ads-enhanced-conversions-setup
-description: |
-  This skill should be used when the user asks to "implement Enhanced Conversions",
-  "set up server-side tagging", "configure Consent Mode V2", "hash customer data",
-  or mentions "first-party data integration", "GDPR compliance for Google Ads",
-  or "Enhanced Conversions for leads".
-  Do NOT use for: general conversion tracking setup (use conversion-tracking-setup), conversion tracking debugging (use conversion-tracking-debugger), GA4 integration (use ga4-integration-guide).
+description: "This skill should be used when the user asks to \"implement Enhanced Conversions\", \"set up server-side tagging\", \"configure Consent Mode V2\", \"hash customer data\", or mentions \"first-party data integration\", \"GDPR compliance for Google Ads\", or \"Enhanced Conversions for leads\". Do NOT use for: general conversion tracking setup (use conversion-tracking-setup), conversion tracking debugging (use conversion-tracking-debugger), GA4 integration (use ga4-integration-guide)."
 ---
 # Enhanced Conversions Setup
 
@@ -235,9 +230,9 @@ EMAIL:
 ──────
 □ Lowercase
 □ No leading/trailing spaces
-□ Do not expand aliases (user+alias@gmail.com = user@gmail.com)
+□ Do not expand aliases (user+alias@example.com = user@example.com; the same rule applies to Gmail plus-aliases)
 
-Example: "John.Doe@Gmail.com" → "john.doe@gmail.com"
+Example: "John.Doe@Example.com" → "john.doe@example.com"
 
 PHONE:
 ──────

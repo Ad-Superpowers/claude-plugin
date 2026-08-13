@@ -1,11 +1,6 @@
 ---
 name: linkedin-learning-phase-tracker
-description: |
-  This skill should be used when the user asks to "navigate LinkedIn learning phase",
-  "wait before optimizing LinkedIn campaigns", "exit LinkedIn learning phase faster",
-  or mentions "LinkedIn campaign high variance first weeks", "LinkedIn budget for optimization",
-  or "LinkedIn algorithm learning period".
-  Do NOT use for: LinkedIn bid strategy selection (use linkedin-bid-strategy-selector), LinkedIn performance troubleshooting (use linkedin-performance-troubleshooter), or LinkedIn benchmark lookups (use linkedin-benchmark-database).
+description: "This skill should be used when the user asks to \"navigate LinkedIn learning phase\", \"wait before optimizing LinkedIn campaigns\", \"exit LinkedIn learning phase faster\", or mentions \"LinkedIn campaign high variance first weeks\", \"LinkedIn budget for optimization\", or \"LinkedIn algorithm learning period\". Do NOT use for: LinkedIn bid strategy selection (use linkedin-bid-strategy-selector), LinkedIn performance troubleshooting (use linkedin-performance-troubleshooter), or LinkedIn benchmark lookups (use linkedin-benchmark-database)."
 ---
 # LinkedIn Learning Phase Tracker
 

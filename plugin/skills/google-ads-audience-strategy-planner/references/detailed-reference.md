@@ -147,7 +147,7 @@ BEST PRACTICES:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   DATE_RANGE: 'LAST_30_DAYS',
   MIN_IMPRESSIONS: 1000,
   MIN_CLICKS: 50,

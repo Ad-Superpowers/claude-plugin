@@ -1,10 +1,6 @@
 ---
 name: tiktok-creative-fatigue-tracker
-description: |
-  This skill should be used when the user asks to "detect TikTok creative fatigue",
-  "refresh TikTok ad creatives", "plan TikTok creative rotation", or mentions
-  "TikTok CTR declining", "TikTok CPM spiking", or "how many creatives for TikTok".
-  Do NOT use for: TikTok video hook/length optimization (use tiktok-video-performance-analyzer), TikTok benchmark lookups (use tiktok-benchmark-database), or TikTok learning phase questions (use tiktok-learning-phase-tracker).
+description: "This skill should be used when the user asks to \"detect TikTok creative fatigue\", \"refresh TikTok ad creatives\", \"plan TikTok creative rotation\", or mentions \"TikTok CTR declining\", \"TikTok CPM spiking\", or \"how many creatives for TikTok\". Do NOT use for: TikTok video hook/length optimization (use tiktok-video-performance-analyzer), TikTok benchmark lookups (use tiktok-benchmark-database), or TikTok learning phase questions (use tiktok-learning-phase-tracker)."
 ---
 # TikTok Creative Fatigue Tracker
 

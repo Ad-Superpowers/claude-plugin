@@ -1,8 +1,6 @@
 ---
 name: channel-selection-framework
-description: |
-  This skill should be used when the user asks to "choose an advertising platform", "compare Meta vs Google vs LinkedIn", "plan a media mix", mentions "which channel should I use", "budget allocation across platforms", or "best platform for my audience".
-  Do NOT use for: cross-platform attribution issues (use attribution-reconciler), audience persona creation (use buyer-persona-framework), or market sizing for budget justification (use market-sizing-guide).
+description: "This skill should be used when the user asks to \"choose an advertising platform\", \"compare Meta vs Google vs LinkedIn\", \"plan a media mix\", mentions \"which channel should I use\", \"budget allocation across platforms\", or \"best platform for my audience\". Do NOT use for: cross-platform attribution issues (use attribution-reconciler), audience persona creation (use buyer-persona-framework), or market sizing for budget justification (use market-sizing-guide)."
 ---
 # Channel Selection Framework for Advertising
 
@@ -430,4 +428,4 @@ google_ads_run_gaql(
 Use GA4 channel data to identify where you already have traction, and GAQL to verify that search demand actually exists before recommending Google Search as a channel.
 
 *Last updated: February 2026*
-*Framework based on industry best practices and AdSuperpowers platform data*
+*Framework based on industry best practices and Ad Superpowers platform data*

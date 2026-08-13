@@ -17,7 +17,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds
   LOW_CTR: 0.005,              // Alert if CTR < 0.5%

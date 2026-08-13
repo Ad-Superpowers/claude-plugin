@@ -16,7 +16,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Thresholds
   MIN_IMPRESSIONS: 100,           // Minimum impressions for analysis

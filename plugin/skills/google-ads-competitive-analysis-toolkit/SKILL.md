@@ -1,11 +1,6 @@
 ---
 name: google-ads-competitive-analysis-toolkit
-description: |
-  This skill should be used when the user asks to "analyze Auction Insights",
-  "monitor competitor strategies", "calculate market share in Google Ads",
-  "build a competitive response plan", or mentions "Share of Voice",
-  "impression share analysis", or "competitor bidding".
-  Do NOT use for: keyword strategy (use keyword-strategy-planner), bid strategy selection (use bid-strategy-selector), or campaign performance diagnosis (use performance-troubleshooter).
+description: "This skill should be used when the user asks to \"analyze Auction Insights\", \"monitor competitor strategies\", \"calculate market share in Google Ads\", \"build a competitive response plan\", or mentions \"Share of Voice\", \"impression share analysis\", or \"competitor bidding\". Do NOT use for: keyword strategy (use keyword-strategy-planner), bid strategy selection (use bid-strategy-selector), or campaign performance diagnosis (use performance-troubleshooter)."
 ---
 # Competitive Analysis Toolkit
 

@@ -1,11 +1,6 @@
 ---
 name: linkedin-lead-scoring-framework
-description: |
-  This skill should be used when the user asks to "score LinkedIn leads",
-  "improve MQL to SQL conversion", "reduce cost per qualified lead",
-  "build a lead scoring model", or mentions "LinkedIn lead quality",
-  "lead qualification framework", or "CRM integration for LinkedIn leads".
-  Do NOT use for: lead form design or A/B testing (use linkedin-lead-gen-optimizer), campaign performance diagnostics (use linkedin-performance-troubleshooter), or ABM account scoring (use linkedin-abm-targeting-strategy).
+description: "This skill should be used when the user asks to \"score LinkedIn leads\", \"improve MQL to SQL conversion\", \"reduce cost per qualified lead\", \"build a lead scoring model\", or mentions \"LinkedIn lead quality\", \"lead qualification framework\", or \"CRM integration for LinkedIn leads\". Do NOT use for: lead form design or A/B testing (use linkedin-lead-gen-optimizer), campaign performance diagnostics (use linkedin-performance-troubleshooter), or ABM account scoring (use linkedin-abm-targeting-strategy)."
 ---
 
 # LinkedIn Lead Scoring Framework

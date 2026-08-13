@@ -1,8 +1,6 @@
 ---
 name: attribution-reconciler
-description: |
-  This skill should be used when the user asks to "reconcile attribution data", "compare conversions across platforms", "fix attribution discrepancies", mentions "which conversion number should I believe", "why do Meta and GA4 show different numbers", or "GDPR impact on tracking".
-  Do NOT use for: single-platform optimization (use platform-specific skills), incrementality testing design (use incrementality-testing-guide), or first-party data / CAPI implementation details (use first-party-data-strategy).
+description: "This skill should be used when the user asks to \"reconcile attribution data\", \"compare conversions across platforms\", \"fix attribution discrepancies\", mentions \"which conversion number should I believe\", \"why do Meta and GA4 show different numbers\", or \"GDPR impact on tracking\". Do NOT use for: single-platform optimization (use platform-specific skills), incrementality testing design (use incrementality-testing-guide), or first-party data / CAPI implementation details (use first-party-data-strategy)."
 ---
 # Cross-Platform Attribution Reconciler
 

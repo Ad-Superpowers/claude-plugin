@@ -1,5 +1,5 @@
 ---
-description: Forward-looking budget planning with scenario modeling (conservative/realistic/aggressive). Integrates market sizing data, competitive share of voice analysis, and platform-specific budget thresholds. Outputs optimal budget distribution across channels with confidence levels and expected ROI ranges. Different from budget-pacing-monitor which tracks actual spend vs. budget. (requires Pro subscription)
+description: "Forward-looking budget planning with scenario modeling (conservative/realistic/aggressive). Integrates market sizing data, competitive share of voice analysis, and platform-specific budget thresholds. Outputs optimal budget distribution across channels with confidence levels and expected ROI ranges. Different from budget-pacing-monitor which tracks actual spend vs. budget. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -16,7 +16,11 @@ Develop a budget allocation plan for [specify company_name] ([specify industry])
 **Planning Period:** Q1 2026
 **Total Budget:** EUR30,000
 **Objective:** growth
+
+> Conditional: if historical_roas
 **Historical ROAS:** [specify historical_roas]x
+
+> Conditional: if target_cpa
 **Target CPA:** EUR[specify target_cpa]
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)

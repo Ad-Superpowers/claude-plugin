@@ -193,7 +193,7 @@ Adjust based on data:
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   MIN_LIST_SIZE_SEARCH: 1000,
   MIN_LIST_SIZE_DISPLAY: 100,
   GROWTH_WARNING_THRESHOLD: -0.10,

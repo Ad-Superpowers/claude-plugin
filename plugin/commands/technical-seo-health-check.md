@@ -1,5 +1,5 @@
 ---
-description: Monitor your website's technical SEO health using Google Search Console. Checks sitemap status, indexing coverage, and inspects key pages for crawl issues, canonical conflicts, mobile usability problems, and rich results eligibility. (requires Pro subscription)
+description: "Monitor your website's technical SEO health using Google Search Console. Checks sitemap status, indexing coverage, and inspects key pages for crawl issues, canonical conflicts, mobile usability problems, and rich results eligibility. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -15,7 +15,7 @@ Monitor technical SEO health via Google Search Console: sitemaps, indexing, craw
 
 - Site: [specify site_url]
 - Pages to inspect: auto
-- Check sitemaps: {{ check_sitemaps | default(true) }}
+- Check sitemaps: true
 
 ## OUTPUT FORMAT (CRITICAL - follow this EXACT structure)
 
@@ -61,12 +61,12 @@ Find "[specify site_url]" in the results. Extract:
 - Site verification status
 - All sitemaps with their processing status, URL counts, errors, warnings, last downloaded date
 
+> Conditional: if check_sitemaps
 
 For each sitemap, flag:
 - Processing errors or warnings > 0
 - Last downloaded > 7 days ago (stale)
 - URL count = 0 (empty sitemap)
-
 
 ### Step 2: Estimate indexing coverage
 ```
@@ -89,14 +89,17 @@ gsc_search_analytics(
     row_limit=10
 )
 ```
-{% if pages_to_inspect == "auto" %}
+
+> Conditional: if pages_to_inspect == "auto"
+
 Auto-select pages to inspect (max 5 to stay within quota):
 1. Homepage (derive from site_url)
 2. Top 3 pages by clicks from the query above
 3. A page from the sitemap that has 0 impressions (if identifiable)
 
-Inspect these specific pages: [specify pages_to_inspect]
+> Otherwise
 
+Inspect these specific pages: [specify pages_to_inspect]
 
 ### Step 4: Inspect key pages
 For each selected page (max 5), run:

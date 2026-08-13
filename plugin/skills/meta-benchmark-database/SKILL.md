@@ -1,11 +1,6 @@
 ---
 name: meta-benchmark-database
-description: |
-  This skill should be used when the user asks to "compare my metrics to benchmarks",
-  "find industry averages", "set campaign targets", or mentions "Meta Ads benchmarks",
-  "CPM by industry", or "average CTR for my vertical". Do NOT use for: performance diagnostics
-  (use performance-troubleshooter), account audits (use account-auditor), scaling decisions
-  (use scaling-calculator).
+description: "This skill should be used when the user asks to \"compare my metrics to benchmarks\", \"find industry averages\", \"set campaign targets\", or mentions \"Meta Ads benchmarks\", \"CPM by industry\", or \"average CTR for my vertical\". Do NOT use for: performance diagnostics (use performance-troubleshooter), account audits (use account-auditor), scaling decisions (use scaling-calculator)."
 ---
 # Benchmark Database
 

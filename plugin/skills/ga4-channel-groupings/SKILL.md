@@ -1,9 +1,6 @@
 ---
 name: ga4-channel-groupings
-description: |
-  This skill should be used when the user asks to "configure channel groupings", "create custom channel groups",
-  "fix source/medium mapping", or mentions "branded vs non-branded traffic", "default channel groups", or "affiliate tracking channels".
-  Do NOT use for: UTM parameter setup (use ga4-cross-platform-tracking), attribution model selection (use ga4-attribution-advisor).
+description: "This skill should be used when the user asks to \"configure channel groupings\", \"create custom channel groups\", \"fix source/medium mapping\", or mentions \"branded vs non-branded traffic\", \"default channel groups\", or \"affiliate tracking channels\". Do NOT use for: UTM parameter setup (use ga4-cross-platform-tracking), attribution model selection (use ga4-attribution-advisor)."
 ---
 # GA4 Channel Groupings Guide
 

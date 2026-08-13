@@ -1,9 +1,6 @@
 ---
 name: ga4-data-layer-guide
-description: |
-  This skill should be used when the user asks to "set up a Data Layer", "implement GTM Data Layer",
-  "push data to dataLayer", or mentions "e-commerce Data Layer", "Data Layer debugging", or "dataLayer structure".
-  Do NOT use for: GA4 property setup (use ga4-property-setup-guide), event tracking without Data Layer (use ga4-event-tracking-setup), or BigQuery export (use ga4-bigquery-export).
+description: "This skill should be used when the user asks to \"set up a Data Layer\", \"implement GTM Data Layer\", \"push data to dataLayer\", or mentions \"e-commerce Data Layer\", \"Data Layer debugging\", or \"dataLayer structure\". Do NOT use for: GA4 property setup (use ga4-property-setup-guide), event tracking without Data Layer (use ga4-event-tracking-setup), or BigQuery export (use ga4-bigquery-export)."
 ---
 # GA4 Data Layer Guide
 

@@ -1,11 +1,6 @@
 ---
 name: meta-performance-troubleshooter
-description: |
-  This skill should be used when the user asks to "troubleshoot campaign performance",
-  "diagnose delivery issues", "fix high CPA", or mentions "underperforming Meta ads",
-  "Ad Relevance Diagnostics", or "kill vs scale decision". Do NOT use for: learning phase
-  issues (use learning-phase-tracker), bid strategy changes (use bid-strategy-selector),
-  creative fatigue specifically (use creative-fatigue-analyzer).
+description: "This skill should be used when the user asks to \"troubleshoot campaign performance\", \"diagnose delivery issues\", \"fix high CPA\", or mentions \"underperforming Meta ads\", \"Ad Relevance Diagnostics\", or \"kill vs scale decision\". Do NOT use for: learning phase issues (use learning-phase-tracker), bid strategy changes (use bid-strategy-selector), creative fatigue specifically (use creative-fatigue-analyzer)."
 ---
 # Performance Troubleshooter
 

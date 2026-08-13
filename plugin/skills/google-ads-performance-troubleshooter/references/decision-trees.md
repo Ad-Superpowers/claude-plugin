@@ -1261,7 +1261,7 @@ See → "Learning Phase Tracker" skill
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Lookback periods
   COMPARE_DAYS: 7,

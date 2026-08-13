@@ -1,20 +1,10 @@
 ---
 name: meta-ad-launch-playbook
-description: |
-  This skill should be used when the user wants to launch a Meta campaign end to end,
-  create a batch of Meta ads, turn a folder of creatives into ads, go "from creatives to
-  live ads", "set up a campaign, ad set and ads", or "make ads with a different ratio per
-  placement". It is the single guided runbook from zero to live ads using the AdSuperpowers
-  MCP write tools (meta_create, meta_create_ad), and it routes to the specialist skills for
-  depth. Do NOT use for: getting a file into Meta / image_hash / hosting (use
-  media-upload-guide), choosing a bid strategy in depth (use bid-strategy-selector), CBO vs
-  ABO theory (use campaign-structure-advisor), writing the copy (use ad-copy-generator),
-  creative testing matrices (use creative-diversification-generator), catalog / DPA strategy
-  (use catalog-optimizer).
+description: "This skill should be used when the user wants to launch a Meta campaign end to end, create a batch of Meta ads, turn a folder of creatives into ads, go \"from creatives to live ads\", \"set up a campaign, ad set and ads\", or \"make ads with a different ratio per placement\". It is the single guided runbook from zero to live ads using the Ad Superpowers MCP write tools (meta_create, meta_create_ad), and it routes to the specialist skills for depth. Do NOT use for: getting a file into Meta / image_hash / hosting (use media-upload-guide), choosing a bid strategy in depth (use bid-strategy-selector), CBO vs ABO theory (use campaign-structure-advisor), writing the copy (use ad-copy-generator), creative testing matrices (use creative-diversification-generator), catalog / DPA strategy (use catalog-optimizer)."
 ---
 # Meta Ad Launch Playbook
 
-The end-to-end runbook for going from "I have some creatives" to live (paused) ads with the AdSuperpowers MCP tools. It owns the **orchestration** — the order of operations and the decisions that trip people up — and hands the deep mechanics to the specialist skills. Follow it top to bottom.
+The end-to-end runbook for going from "I have some creatives" to live (paused) ads with the Ad Superpowers MCP tools. It owns the **orchestration** — the order of operations and the decisions that trip people up — and hands the deep mechanics to the specialist skills. Follow it top to bottom.
 
 ## The journey at a glance
 
@@ -167,7 +157,7 @@ Common stumbles and the fix:
 - Mixed image + video rejected → split into separate ads.
 
 **Honest limits (today):**
-- **Catalog / Advantage+ catalog ads** cannot be created through MCP — the catalog tools are read-only (`meta_catalog_query`). Build catalog ads in Ads Manager; `use catalog-optimizer` for the strategy.
+- **Catalog / Advantage+ catalog ads** cannot be created through MCP: this release ships no catalog tool, so catalog data is not reachable either. Build catalog ads in Ads Manager; `use catalog-optimizer` for the strategy.
 - **No bulk-create tool** — batch = paced `meta_create_ad` calls (see §3).
 
 ## Complementary skills

@@ -1,10 +1,6 @@
 ---
 name: linkedin-lead-gen-optimizer
-description: |
-  This skill should be used when the user asks to "optimize LinkedIn Lead Gen Forms",
-  "compare Lead Gen Forms vs landing pages", "improve LinkedIn lead quality",
-  "reduce LinkedIn CPL", or mentions "LinkedIn form conversion rate" or "B2B lead quality tradeoff".
-  Do NOT use for: LinkedIn bid strategy questions (use linkedin-bid-strategy-selector), LinkedIn benchmark lookups (use linkedin-benchmark-database), or LinkedIn learning phase questions (use linkedin-learning-phase-tracker).
+description: "This skill should be used when the user asks to \"optimize LinkedIn Lead Gen Forms\", \"compare Lead Gen Forms vs landing pages\", \"improve LinkedIn lead quality\", \"reduce LinkedIn CPL\", or mentions \"LinkedIn form conversion rate\" or \"B2B lead quality tradeoff\". Do NOT use for: LinkedIn bid strategy questions (use linkedin-bid-strategy-selector), LinkedIn benchmark lookups (use linkedin-benchmark-database), or LinkedIn learning phase questions (use linkedin-learning-phase-tracker)."
 ---
 # LinkedIn Lead Gen Form Optimizer
 

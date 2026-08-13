@@ -1,5 +1,5 @@
 ---
-description: Audit your Google Tag Manager containers for misconfigurations, duplicate tracking, unused tags/triggers, consent compliance gaps, and performance issues. Returns a prioritized remediation roadmap with health scores. (requires Pro subscription)
+description: "Audit your Google Tag Manager containers for misconfigurations, duplicate tracking, unused tags/triggers, consent compliance gaps, and performance issues. Returns a prioritized remediation roadmap with health scores. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -71,14 +71,17 @@ Estimated effort: X hours
 ## EXECUTION STEPS
 
 ### Step 1: Discover containers
-{% if container_id == "all" or not container_id %}
+
+> Conditional: if container_id == "all" or not container_id
+
 ```
 gtm_list_containers()
 ```
 List all containers. Present container names and IDs. Proceed to audit each (or ask user to pick one if many).
 
-Audit container: [specify container_id]
+> Otherwise
 
+Audit container: [specify container_id]
 
 ### Step 2: Run deep audit
 For each container to audit:
@@ -153,5 +156,7 @@ Classify all issues by severity (Critical/High/Medium). Generate the remediation
 - **No access to container**: gtm_audit will return a permission error. Advise user to grant read access to the service account.
 - **Very large container (100+ tags)**: Scoring still applies but note that large containers inherently have more governance challenges. Recommend splitting into multiple containers by site section.
 - **Multiple containers for same site**: Flag potential duplicate tracking risk. Check if the same conversion tags appear in multiple containers.
-{% if focus != "all" and focus %}
+
+> Conditional: if focus != "all" and focus
+
 - **Focused audit ([specify focus])**: Only score and report on the [specify focus] dimension. Skip other category scores but still calculate overall health with available data.

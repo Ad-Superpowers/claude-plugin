@@ -1,17 +1,14 @@
 ---
 name: ga4-api-reporting
-description: |
-  This skill should be used when the user asks to "use the GA4 Data API", "build automated reports",
-  "create a custom GA4 dashboard", or mentions "GA4 API quotas", "data extraction scripts", or "programmatic GA4 reporting".
-  Do NOT use for: GA4 UI reports (use ga4-revenue-analysis), BigQuery raw data (use ga4-bigquery-export), event tracking setup (use ga4-event-tracking-setup).
+description: "This skill should be used when the user asks to \"use the GA4 Data API\", \"build automated reports\", \"create a custom GA4 dashboard\", or mentions \"GA4 API quotas\", \"data extraction scripts\", or \"programmatic GA4 reporting\". Do NOT use for: GA4 UI reports (use ga4-revenue-analysis), BigQuery raw data (use ga4-bigquery-export), event tracking setup (use ga4-event-tracking-setup)."
 ---
 # GA4 Data API Reporting Guide
 
 Complete guide for using the GA4 Data API for custom reporting and automated dashboards.
 
-## Quick Note: AdSuperpowers MCP Tool
+## Quick Note: Ad Superpowers MCP Tool
 
-The AdSuperpowers MCP server wraps the GA4 Data API into the `ga4_run_report()` tool, which handles authentication and pagination automatically. Use it for ad-hoc analysis before building custom API integrations:
+The Ad Superpowers MCP server wraps the GA4 Data API into the `ga4_run_report()` tool, which handles authentication and pagination automatically. Use it for ad-hoc analysis before building custom API integrations:
 
 ```python
 ga4_run_report(
@@ -114,7 +111,7 @@ KEY EVENTS (CONVERSIONS):
 
 FULL LIST:
 ──────────
-https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema
+developers.google.com/analytics/devguides/reporting/data/v1/api-schema
 ```
 
 ## Automated Reporting Setup

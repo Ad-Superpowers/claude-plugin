@@ -11,7 +11,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // URL check settings
   TIMEOUT: 10000,           // 10 second timeout
@@ -173,7 +173,7 @@ function sendUrlReport(brokenUrls, redirectUrls, totalChecked) {
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   SPREADSHEET_URL: '', // Optional: URL to output spreadsheet
 
   // Minimum thresholds
@@ -334,7 +334,7 @@ function sendNgramReport(negatives, opportunities, totalNgrams) {
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
 
   // Adjustment settings
   MIN_CONVERSIONS_FOR_ADJUSTMENT: 5,

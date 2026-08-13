@@ -1,8 +1,6 @@
 ---
 name: landing-page-optimization-guide
-description: |
-  This skill should be used when the user asks to "optimize my landing page", "improve conversion rate", "audit my landing page for CRO", mentions "message match between ads and pages", "high bounce rate on paid traffic", or "A/B test prioritization".
-  Do NOT use for: ad creative optimization (use platform-specific creative/fatigue skills), channel selection (use channel-selection-framework), or tracking/pixel implementation (use first-party-data-strategy or gtm-container-auditor).
+description: "This skill should be used when the user asks to \"optimize my landing page\", \"improve conversion rate\", \"audit my landing page for CRO\", mentions \"message match between ads and pages\", \"high bounce rate on paid traffic\", or \"A/B test prioritization\". Do NOT use for: ad creative optimization (use platform-specific creative/fatigue skills), channel selection (use channel-selection-framework), or tracking/pixel implementation (use first-party-data-strategy or gtm-container-auditor)."
 ---
 # Landing Page Optimization Guide for Paid Traffic
 

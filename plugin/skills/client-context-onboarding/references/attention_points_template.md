@@ -46,7 +46,7 @@ counts are monthly, use a period decimal)
 | `meta` | `act_4455667788` | Bean Theory Main |
 | `google_ads` | `135-246-3579` | Bean Theory EU |
 | `google_analytics` | `properties/445566778` | Bean Theory GA4 |
-| `tiktok` | `7012345678901234567` | Bean Theory NL |
+| `tiktok` | `7012345678` | Bean Theory NL |
 
 **attention_points:**
 

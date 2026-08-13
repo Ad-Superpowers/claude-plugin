@@ -1,5 +1,5 @@
 ---
-description: End-to-end creative refresh pipeline: analyze ad performance, detect fatigue, build a creative brief from your top performers, then upload and deploy a new image you provide (local file up to 4 MB, or any public HTTPS URL). Image generation happens outside the app — bring your own image from Photoshop, Canva, Midjourney, Gemini, or anywhere. (requires Pro subscription)
+description: "End-to-end creative refresh pipeline: analyze ad performance, detect fatigue, build a creative brief from your top performers, then upload and deploy a new image you provide (local file up to 4 MB, or any public HTTPS URL). Image generation happens outside the app \u2014 bring your own image from Photoshop, Canva, Midjourney, Gemini, or anywhere. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
@@ -18,7 +18,7 @@ End-to-end creative refresh pipeline: analyze performance → detect fatigue →
 **Requirements:**
 - Connected Meta Ads account
 - A new image you want to deploy (after Step 5):
-  - **Local file:** any PNG/JPEG up to **4 MB raw**. Your AI client reads and base64-encodes the bytes for you.
+  - **Local file upload:** any PNG/JPEG up to **4 MB raw**. Your AI client reads and base64-encodes the bytes for you.
   - **Public URL:** any HTTPS link (Canva export, S3, CDN, etc.). No size limit beyond Meta's own (~30 MB).
 
 ## OUTPUT FORMAT
@@ -48,7 +48,7 @@ End-to-end creative refresh pipeline: analyze performance → detect fatigue →
 - **Composition / framing:** {derived}
 - **Lighting:** {derived}
 - **Aspect ratio:** 4:5
-- **Variations to produce:** {{ num_variations | default(2) }}
+- **Variations to produce:** 2
 - **Negative cues (avoid):** {derived}
 
 ### UPLOAD + DEPLOYMENT STATUS
@@ -61,12 +61,16 @@ End-to-end creative refresh pipeline: analyze performance → detect fatigue →
 ```
 meta_list_ad_accounts()
 ```
-Let the user select their account or use account `[specify account_id]`.
+Let the user select their account
+> Conditional: if account_id
+ or use account `[specify account_id]`.
 
 ### Step 2: Creative Audit
 Fetch current creatives with performance data:
 ```
-meta_get_creatives(account_id="FROM_STEP_1", scope="campaign", campaign_id="[specify campaign_id]")
+meta_get_creatives(account_id="FROM_STEP_1", scope="campaign"
+> Conditional: if campaign_id
+, campaign_id="[specify campaign_id]")
 ```
 
 Then get insights for trend analysis:
@@ -105,7 +109,7 @@ From the creative audit, identify the winning elements of the best-performing ad
 - **Mood / emotion:** Confident, calm, urgent, aspirational
 
 ### Step 5: Output the Creative Brief
-Synthesize Step 4 into a structured creative brief in the OUTPUT FORMAT above. **Stop here and present the brief to the user.** The user will use this brief externally (in their image tool of choice) to produce {{ num_variations | default(2) }} new image(s).
+Synthesize Step 4 into a structured creative brief in the OUTPUT FORMAT above. **Stop here and present the brief to the user.** The user will use this brief externally (in their image tool of choice) to produce 2 new image(s).
 
 Wait for the user to come back with the image(s). Each image must be delivered as a **public HTTPS URL** (e.g., Canva export, Google Drive share link, Dropbox, S3). Meta fetches the image server-side — no base64 upload required. If the user has a local file, ask them to host it somewhere accessible first.
 
@@ -132,7 +136,7 @@ Ads are created as PAUSED for final review. Activate with `meta_update()`.
 ## EDGE CASES
 - **No fatigued ads:** Confirm healthy status. Still offer a proactive refresh if any ad is >10 days old.
 - **User has no image yet:** Stop at Step 5 with the creative brief. They'll come back with an image URL, then resume from Step 6.
-- **User only has a local file:** Ask them to host it publicly (Canva export, Google Drive share link, Dropbox, S3) and provide the URL.
+- **User only has a local image:** Ask them to host it publicly (Canva export, Google Drive share link, Dropbox, S3) and provide the URL.
 - **Image is not PNG/JPEG:** Ask the user to convert (Meta only accepts standard image formats).
 - **Meta upload fails:** `meta_create_ad` returns a structured error with a hint. Surface it to the user — common causes are invalid `account_id`, an unreachable image URL, or missing ad-creation permissions.
 - **No ad sets available:** Help the user identify the right ad set via `meta_query`.

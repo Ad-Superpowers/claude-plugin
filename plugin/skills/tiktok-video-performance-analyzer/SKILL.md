@@ -1,10 +1,6 @@
 ---
 name: tiktok-video-performance-analyzer
-description: |
-  This skill should be used when the user asks to "improve TikTok video hooks",
-  "optimize TikTok video length", "analyze TikTok video completion rates", or mentions
-  "TikTok first 2 seconds", "UGC vs polished TikTok ads", or "when to use Spark Ads".
-  Do NOT use for: TikTok creative fatigue detection (use tiktok-creative-fatigue-tracker), TikTok benchmark lookups (use tiktok-benchmark-database), or TikTok attribution questions (use tiktok-attribution-guide).
+description: "This skill should be used when the user asks to \"improve TikTok video hooks\", \"optimize TikTok video length\", \"analyze TikTok video completion rates\", or mentions \"TikTok first 2 seconds\", \"UGC vs polished TikTok ads\", or \"when to use Spark Ads\". Do NOT use for: TikTok creative fatigue detection (use tiktok-creative-fatigue-tracker), TikTok benchmark lookups (use tiktok-benchmark-database), or TikTok attribution questions (use tiktok-attribution-guide)."
 ---
 # TikTok Video Performance Analyzer
 

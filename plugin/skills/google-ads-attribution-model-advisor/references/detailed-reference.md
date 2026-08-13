@@ -16,7 +16,7 @@
  */
 
 var CONFIG = {
-  EMAIL: 'your@email.com',
+  EMAIL: 'you@example.com',
   DATE_RANGE: 'LAST_30_DAYS',
 
   // Threshold for significant differences (20% = 0.20)

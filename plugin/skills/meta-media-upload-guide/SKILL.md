@@ -1,17 +1,10 @@
 ---
 name: meta-media-upload-guide
-description: |
-  This skill should be used when the user asks to "upload a video to Meta", "upload an image to Meta",
-  "push a local file into Meta media library", "use a Canva / Google Drive / Dropbox asset for an ad",
-  "Meta says it can't upload my local file", "how do I get an image_hash", "bulk upload creatives",
-  or mentions "image_url vs image_hash", "video_url vs video_id", "Meta Media Library", "Zakelijke media",
-  or "Meta asset hosting". Covers the complete decision tree from a file on disk to a usable Meta asset.
-  Do NOT use for: ad copy (use ad-copy-generator), video scripts (use video-script-writer), creative
-  strategy (use creative-diversification-generator), CAPI / pixel setup (use capi-implementation-guide).
+description: "This skill should be used when the user asks to \"upload a video to Meta\", \"upload an image to Meta\", \"push a local file into Meta media library\", \"use a Canva / Google Drive / Dropbox asset for an ad\", \"Meta says it can't upload my local file\", \"how do I get an image_hash\", \"bulk upload creatives\", or mentions \"image_url vs image_hash\", \"video_url vs video_id\", \"Meta Media Library\", \"Zakelijke media\", or \"Meta asset hosting\". Covers the complete decision tree from a file on disk to a usable Meta asset. Do NOT use for: ad copy (use ad-copy-generator), video scripts (use video-script-writer), creative strategy (use creative-diversification-generator), CAPI / pixel setup (use capi-implementation-guide)."
 ---
 # Meta Media Upload Guide
 
-The single source of truth for getting creative assets into Meta Ads when using AdSuperpowers' MCP tools. Eliminates the most common workflow confusion: **"why won't Claude upload my local file?"**.
+The single source of truth for getting creative assets into Meta Ads when using Ad Superpowers' MCP tools. Eliminates the most common workflow confusion: **"why won't Claude upload my local file?"**.
 
 ## Three Upload Tiers (in order of preference)
 
@@ -405,7 +398,7 @@ Do NOT try to stretch a 1:1 asset across Stories placement — Meta's placement 
 ### Recipe 2 — Single image ad from a local file on disk (Tier 2)
 
 ```
-1. User attaches /tmp/hero_1x1_1080x1080.jpg to the conversation
+1. User attaches hero_1x1_1080x1080.jpg to the conversation
    (Cowork mode reads it automatically; Claude Code reads it via file path).
 2. Claude base64-encodes the bytes.
 3. Claude: meta_upload_image(
@@ -480,8 +473,7 @@ Step 2 — create ONE ad with placement_assets bundling all variants:
       placement_assets=[
           {"image_hash": "<9x16 hash>",
            "placements": ["instagram_stories", "facebook_stories",
-                          "instagram_reels", "facebook_reels",
-                          "messenger_stories"]},
+                          "instagram_reels", "facebook_reels"]},
           {"image_hash": "<4x5 hash>",
            "placements": ["instagram_feed", "facebook_feed"]},
           {"image_hash": "<1.91x1 hash>",
@@ -515,13 +507,16 @@ creative_id, one engagement post across placements.
 | `instagram_feed` | instagram / stream | 1:1, 4:5 |
 | `instagram_stories` | instagram / story | 9:16 |
 | `instagram_reels` | instagram / reels | 9:16 |
-| `instagram_explore` | instagram / explore | 1:1, 4:5 |
-| `instagram_explore_home` | instagram / explore_home | 9:16 |
 | `instagram_profile_feed` | instagram / profile_feed | 1:1, 4:5 |
 | `messenger_inbox` | messenger / messenger_home | 1:1, 1.91:1 |
-| `messenger_stories` | messenger / story | 9:16 |
 | `audience_network` | audience_network / classic | 1.91:1, 1:1, 9:16 |
 | `threads` | threads / feed | 1:1, 9:16 |
+
+**Retired by Meta in Marketing API v26.0 (29 July 2026):** Instagram Explore
+(both Explore and Explore Home) and Messenger Stories. Passing them now returns
+an error explaining why. Explore is rejected by Meta outright; Messenger Stories
+is worse if left in, because Meta accepts the ad and then never delivers to that
+placement. Use `instagram_stories` and `facebook_stories` for 9:16 reach instead.
 
 ### How `placement_assets` builds the creative (under the hood)
 

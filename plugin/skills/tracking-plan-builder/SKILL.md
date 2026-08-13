@@ -1,12 +1,6 @@
 ---
 name: tracking-plan-builder
-description: |
-  This skill should be used when the user asks to "build a tracking plan",
-  "map business goals to conversion events", "audit what events to track",
-  "define event naming conventions", or mentions "measurement strategy",
-  "cross-platform event mapping", or "KPI to event mapping".
-  Do NOT use for: GTM tag/trigger implementation (use gtm-conversion-setup-guide), server-side tagging
-  (use gtm-server-side-tagging-guide), or consent/privacy setup (use gtm-consent-mode-guide).
+description: "This skill should be used when the user asks to \"build a tracking plan\", \"map business goals to conversion events\", \"audit what events to track\", \"define event naming conventions\", or mentions \"measurement strategy\", \"cross-platform event mapping\", or \"KPI to event mapping\". Do NOT use for: GTM tag/trigger implementation (use gtm-conversion-setup-guide), server-side tagging (use gtm-server-side-tagging-guide), or consent/privacy setup (use gtm-consent-mode-guide)."
 ---
 
 # Tracking Plan Builder
@@ -363,7 +357,7 @@ window.dataLayer.push({
 
 ## Step 9: Audit Your Current Setup
 
-Use the AdSuperpowers MCP tools to audit what you currently have:
+Use the Ad Superpowers MCP tools to audit what you currently have:
 
 ### Available MCP Tools
 

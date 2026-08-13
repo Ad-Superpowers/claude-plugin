@@ -1,5 +1,5 @@
 ---
-description: High-level monthly report designed for stakeholders. Focuses on business impact, ROI, key learnings, and strategic recommendations. (requires Pro subscription)
+description: "High-level monthly report designed for stakeholders. Focuses on business impact, ROI, key learnings, and strategic recommendations. (requires Pro subscription)"
 disable-model-invocation: true
 ---
 
