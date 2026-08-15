@@ -215,7 +215,7 @@ Run these GAQL queries to check 10 items:
 □ 6. Search Terms check (random sample)?
    → google_ads_run_gaql(query="SELECT search_term_view.search_term, metrics.impressions, metrics.clicks, metrics.conversions FROM search_term_view WHERE segments.date DURING LAST_7_DAYS AND metrics.impressions > 5 ORDER BY metrics.clicks DESC LIMIT 50")
 □ 7. Ad Strength distribution?
-   → google_ads_run_gaql(query="SELECT ad_group_ad.ad.responsive_search_ad.ad_strength FROM ad_group_ad WHERE ad_group_ad.status = 'ENABLED'")
+   → google_ads_run_gaql(query="SELECT ad_group_ad.ad_strength FROM ad_group_ad WHERE ad_group_ad.status = 'ENABLED'")
 □ 8. Budget spend rate?
    → Compare metrics.cost_micros vs campaign.campaign_budget (budget resource)
 □ 9. Impression Share (top campaign)?

@@ -42,7 +42,7 @@ google_ads_run_gaql(query="
          conversion_action.include_in_conversions_metric,
          conversion_action.click_through_lookback_window_days,
          conversion_action.view_through_lookback_window_days,
-         metrics.conversions, metrics.conversion_value
+         metrics.conversions, metrics.conversions_value
   FROM conversion_action
   WHERE conversion_action.status = 'ENABLED'
 ")

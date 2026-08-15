@@ -80,7 +80,7 @@ Also previous 3-day window for trend comparison.
 
 **LinkedIn Ads:** `linkedin_get_analytics(account_id="FROM_STEP_1", start_date="30_DAYS_AGO", end_date="TODAY", fields=["impressions","clicks","costInLocalCurrency","externalWebsiteConversions"])`
 
-**Google Ads:** `google_ads_run_gaql(customer_id="FROM_STEP_1", query="SELECT asset_group.name, asset_group_asset.performance_label, asset_group_asset.field_type, campaign.name, metrics.impressions, metrics.clicks, metrics.ctr, metrics.cost_micros, metrics.conversions FROM asset_group_asset WHERE segments.date DURING LAST_30_DAYS")`
+**Google Ads:** `google_ads_run_gaql(customer_id="FROM_STEP_1", query="SELECT asset_group.name, asset_group_asset.field_type, campaign.name, metrics.impressions, metrics.clicks, metrics.ctr, metrics.cost_micros, metrics.conversions FROM asset_group_asset WHERE segments.date DURING LAST_30_DAYS")`
 
 For Display/YouTube: `google_ads_run_gaql(customer_id="FROM_STEP_1", query="SELECT ad_group_ad.ad.name, metrics.impressions, metrics.clicks, metrics.ctr, metrics.average_cpc, metrics.cost_micros, metrics.conversions FROM ad_group_ad WHERE campaign.advertising_channel_type IN ('DISPLAY','VIDEO') AND segments.date DURING LAST_30_DAYS ORDER BY metrics.cost_micros DESC")`
 

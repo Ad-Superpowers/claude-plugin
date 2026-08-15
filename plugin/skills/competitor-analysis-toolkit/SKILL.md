@@ -506,7 +506,7 @@ If the user has connected accounts, complement manual competitor research with l
 # Pull auction insights to see which competitors you're bidding against in Google Ads
 google_ads_run_gaql(
     customer_id="YOUR_CUSTOMER_ID",
-    query="SELECT auction_insight.domain, metrics.search_impression_share, metrics.search_outranking_share FROM auction_insight_view WHERE segments.date DURING LAST_30_DAYS ORDER BY metrics.search_impression_share DESC LIMIT 20"
+    query="SELECT segments.auction_insight_domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_outranking_share FROM campaign WHERE segments.date DURING LAST_30_DAYS ORDER BY metrics.auction_insight_search_impression_share DESC LIMIT 20"
 )
 ```
 

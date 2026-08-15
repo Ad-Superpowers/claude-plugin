@@ -2,9 +2,9 @@
 name: google-ads-gaql-query-guide
 description: "This skill should be used when the user asks to \"write a GAQL query\", \"build a Google Ads report\", \"select metrics and dimensions\", \"filter by date range in GAQL\", or mentions \"video_views\", \"campaign_search_term_view\", \"LAST_90_DAYS\", or \"Google Ads Query Language\"."
 ---
-# GAQL Query Guide (API v23)
+# GAQL Query Guide
 
-Complete reference for Google Ads Query Language. Updated for API v23.2 (released 2026-03-25). Monthly minor releases: v23.0 (Jan 2026), v23.1 (Feb 2026), v23.2 (Mar 2026).
+Complete reference for Google Ads Query Language. Field names verified against the live googleAdsFields catalog for v25 (2026-08-14). The version this server talks to is set by GOOGLE_ADS_API_VERSION, so this guide names versions only where a field actually changed.
 
 ## Quick Reference
 
@@ -183,7 +183,7 @@ age_range_view        - Age demographics
 video                 - Video campaign data
 youtube_video_stat    - YouTube video statistics
 shopping_performance_view - Product-level Shopping/PMax performance
-auction_insight        - Competitor domains, overlap, position above, outranking
+segments.auction_insight_domain (on campaign) - Competitor domains, overlap, position above, outranking
 ```
 
 ## Core Metrics
@@ -235,6 +235,60 @@ WHERE campaign.advertising_channel_type = 'VIDEO'
   AND segments.date DURING LAST_30_DAYS
 ```
 
+## Newly Available (v24 and v25)
+
+70 fields arrived after v23 that earlier versions of this guide could not use.
+Measured against the live googleAdsFields catalog on 2026-08-14.
+
+**Profit and cart economics** — the whole `all_*` family, so ROAS conversations can
+move from revenue to margin:
+
+```
+metrics.all_gross_profit_micros        metrics.all_gross_profit_margin
+metrics.all_revenue_micros             metrics.all_cost_of_goods_sold_micros
+metrics.all_orders                     metrics.all_units_sold
+metrics.all_average_order_value_micros metrics.all_average_cart_size
+metrics.all_cross_sell_revenue_micros  metrics.all_cross_sell_gross_profit_micros
+metrics.all_lead_revenue_micros        metrics.all_lead_gross_profit_micros
+```
+
+**What actually sold**, as segments — previously you could only segment on the
+product that was *clicked*, not the one that was *bought*:
+
+```
+segments.product_sold_item_id      segments.product_sold_title
+segments.product_sold_brand        segments.product_sold_condition
+segments.product_sold_category_level1..5
+segments.product_sold_type_l1..l5
+segments.product_sold_custom_attribute0..4
+```
+
+**Experiment statistics** — control-arm metrics plus p-values and margins of error
+(`metrics.control_*`, `metrics.*_p_value`, `metrics.*_margin_of_error`), which turn
+an A/B result into a significance claim instead of a vibe.
+
+**YouTube engagement (v25)**: `metrics.youtube_comments`, `metrics.youtube_likes`,
+`metrics.youtube_shares`, plus `segments.ad_sub_format_type` for instream duration.
+
+**Device platform (v24)**: `segments.mobile_device_platform` splits iOS from Android,
+which `segments.device` never did.
+
+Example — margin by product actually sold:
+
+```sql
+SELECT
+  segments.product_sold_title,
+  segments.product_sold_brand,
+  metrics.all_revenue_micros,
+  metrics.all_gross_profit_micros,
+  metrics.all_gross_profit_margin,
+  metrics.all_units_sold
+FROM shopping_performance_view
+WHERE segments.date DURING LAST_30_DAYS
+ORDER BY metrics.all_gross_profit_micros DESC
+LIMIT 25
+```
+
 ## Common Query Patterns
 
 ### Campaign Performance Report
@@ -282,7 +336,6 @@ LIMIT 100
 SELECT
   campaign.name,
   campaign_search_term_view.search_term,
-  campaign_search_term_view.status,
   metrics.impressions,
   metrics.clicks,
   metrics.cost_micros,
@@ -307,7 +360,7 @@ SELECT
   metrics.clicks,
   metrics.average_cpc,
   metrics.conversions,
-  metrics.quality_score
+  ad_group_criterion.quality_info.quality_score
 FROM keyword_view
 WHERE segments.date DURING LAST_30_DAYS
   AND campaign.status = 'ENABLED'
@@ -351,14 +404,14 @@ LIMIT 50
 
 ```sql
 SELECT
-  auction_insight.display_domain,
+  segments.auction_insight_domain,
   metrics.auction_insight_search_impression_share,
   metrics.auction_insight_search_overlap_rate,
   metrics.auction_insight_search_position_above_rate,
   metrics.auction_insight_search_outranking_share,
   metrics.auction_insight_search_top_impression_percentage,
   metrics.auction_insight_search_absolute_top_impression_percentage
-FROM auction_insight
+FROM campaign
 WHERE segments.date DURING LAST_30_DAYS
 ORDER BY metrics.auction_insight_search_impression_share DESC
 LIMIT 20

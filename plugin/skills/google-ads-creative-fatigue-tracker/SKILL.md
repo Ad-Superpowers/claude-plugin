@@ -128,7 +128,6 @@ google_ads_run_gaql(query="
   SELECT
     campaign.name,
     campaign_search_term_view.search_term,
-    campaign_search_term_view.status,
     metrics.impressions,
     metrics.clicks,
     metrics.cost_micros,

@@ -129,7 +129,7 @@ Requires: Custom Label 1 = "zombie" in the feed for products with 0 impressions.
 ```sql
 -- Listing group filters per asset group
 SELECT asset_group.name, asset_group_listing_group_filter.type,
-    asset_group_listing_group_filter.vertical,
+    asset_group_listing_group_filter.listing_source,
     asset_group_listing_group_filter.path
 FROM asset_group_listing_group_filter
 ```
@@ -446,7 +446,6 @@ google_ads_run_gaql(query="
   SELECT
     campaign.name,
     campaign_search_term_view.search_term,
-    campaign_search_term_view.status,
     metrics.impressions,
     metrics.clicks,
     metrics.cost_micros,

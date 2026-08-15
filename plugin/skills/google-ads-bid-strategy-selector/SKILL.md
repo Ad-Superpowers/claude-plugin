@@ -4,7 +4,7 @@ description: "This skill should be used when the user asks to \"choose a Google 
 ---
 # Bid Strategy Selector
 
-Complete guide for choosing and implementing the right Google Ads Smart Bidding strategy based on goals, data, and account situation. Current API: v23.2 (March 25, 2026).
+Complete guide for choosing and implementing the right Google Ads Smart Bidding strategy based on goals, data, and account situation.
 
 ## Quick Decision Tree
 

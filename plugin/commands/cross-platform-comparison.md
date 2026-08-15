@@ -62,7 +62,7 @@ Confidence: HIGH (1000+ convs, >25% diff) | MEDIUM (100-999 convs) | LOW (<100 c
 
 **GA4:** `ga4_run_report(property_id="FROM_STEP_1", start_date="30daysAgo", end_date="yesterday", metrics=["conversions","totalRevenue"], dimensions=["sessionDefaultChannelGroup"])`
 
-**Auction Insights (optional):** `google_ads_run_gaql(customer_id="...", query="SELECT campaign.name, auction_insight.domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_outranking_share FROM auction_insight WHERE segments.date DURING LAST_30_DAYS LIMIT 15")`
+**Auction Insights (optional):** `google_ads_run_gaql(customer_id="...", query="SELECT campaign.name, segments.auction_insight_domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_outranking_share FROM auction_insight WHERE segments.date DURING LAST_30_DAYS LIMIT 15")`
 
 ### Step 3: Analyze
 

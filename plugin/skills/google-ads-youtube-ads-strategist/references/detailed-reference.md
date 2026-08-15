@@ -56,7 +56,7 @@ function main() {
     var cost = costMicros / 1000000;
 
     var viewRate = parseFloat(row['metrics.video_view_rate']) || 0;
-    var avgCpvMicros = parseInt(row['metrics.average_cpv_micros']) || 0;
+    var avgCpvMicros = parseInt(row['metrics.trueview_average_cpv']) || 0;
     var avgCpv = avgCpvMicros / 1000000;
 
     var q25 = parseFloat(row['metrics.video_quartile_p25_rate']) || 0;

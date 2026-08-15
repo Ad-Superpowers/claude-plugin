@@ -37,7 +37,7 @@ function main() {
     'SELECT campaign.name, campaign.id, ' +
     'metrics.impressions, metrics.clicks, metrics.cost_micros, ' +
     'metrics.conversions, metrics.conversions_value, metrics.ctr, ' +
-    'metrics.average_cpc_micros ' +
+    'metrics.average_cpc ' +
     'FROM campaign ' +
     'WHERE campaign.advertising_channel_type = "DISCOVERY" ' +
     'AND segments.date DURING ' + CONFIG.DATE_RANGE + ' ' +
@@ -58,7 +58,7 @@ function main() {
       var conversions = parseFloat(row['metrics.conversions']) || 0;
       var value = parseFloat(row['metrics.conversions_value']) || 0;
       var ctr = parseFloat(row['metrics.ctr']) || 0;
-      var avgCpcMicros = parseInt(row['metrics.average_cpc_micros']) || 0;
+      var avgCpcMicros = parseInt(row['metrics.average_cpc']) || 0;
       var cpc = avgCpcMicros / 1000000;
 
       var campaign = {

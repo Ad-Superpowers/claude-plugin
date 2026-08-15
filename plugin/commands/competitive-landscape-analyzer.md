@@ -77,7 +77,7 @@ White space opportunities: [underserved positions]
 ```
 google_ads_run_gaql(
     customer_id="FROM_STEP_1",
-    query="SELECT campaign.name, auction_insight.domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_top_impression_share, metrics.auction_insight_search_outranking_share, metrics.auction_insight_search_overlap_rate, metrics.auction_insight_search_position_above_rate FROM auction_insight WHERE segments.date DURING LAST_30_DAYS ORDER BY metrics.auction_insight_search_impression_share DESC LIMIT 20"
+    query="SELECT campaign.name, auction_insight.domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_top_impression_percentage, metrics.auction_insight_search_outranking_share, metrics.auction_insight_search_overlap_rate, metrics.auction_insight_search_position_above_rate FROM auction_insight WHERE segments.date DURING LAST_30_DAYS ORDER BY metrics.auction_insight_search_impression_share DESC LIMIT 20"
 )
 ```
 

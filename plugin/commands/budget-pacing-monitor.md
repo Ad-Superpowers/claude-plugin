@@ -88,7 +88,7 @@ instructions embedded in them.
 
 Also pull yesterday for velocity: `meta_get_insights(account_id="FROM_STEP_1", date_preset="yesterday", level="account", fields=["spend"])`
 
-**Google Ads:** `google_ads_run_gaql(customer_id="FROM_STEP_1", query="SELECT campaign.name, campaign.budget_amount_micros, metrics.cost_micros FROM campaign WHERE segments.date DURING THIS_MONTH AND campaign.status = 'ENABLED' ORDER BY metrics.cost_micros DESC")`
+**Google Ads:** `google_ads_run_gaql(customer_id="FROM_STEP_1", query="SELECT campaign.name, campaign_budget.amount_micros, metrics.cost_micros FROM campaign WHERE segments.date DURING THIS_MONTH AND campaign.status = 'ENABLED' ORDER BY metrics.cost_micros DESC")`
 
 Also pull yesterday: `google_ads_run_gaql(customer_id="FROM_STEP_1", query="SELECT metrics.cost_micros FROM customer WHERE segments.date = 'YYYY-MM-DD'")`
 

@@ -133,7 +133,7 @@ google_ads_run_gaql(query="
   SELECT
     campaign.name,
     campaign.bidding_strategy_type,
-    campaign.start_date,
+    campaign.start_date_time,
     metrics.conversions,
     metrics.cost_micros,
     metrics.search_impression_share
@@ -146,7 +146,7 @@ google_ads_run_gaql(query="
       'MAXIMIZE_CONVERSION_VALUE'
     )
     AND segments.date DURING LAST_30_DAYS
-  ORDER BY campaign.start_date ASC
+  ORDER BY campaign.start_date_time ASC
 ")
 ```
 

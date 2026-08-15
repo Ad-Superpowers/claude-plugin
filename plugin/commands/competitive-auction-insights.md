@@ -70,7 +70,7 @@ For the top 5 campaigns by spend, run:
 ```
 google_ads_run_gaql(
     customer_id="CUSTOMER_ID",
-    query="SELECT campaign.name, auction_insight.display_domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_overlap_rate, metrics.auction_insight_search_position_above_rate, metrics.auction_insight_search_top_impression_percentage, metrics.auction_insight_search_absolute_top_impression_percentage, metrics.auction_insight_search_outranking_share FROM auction_insight WHERE segments.date DURING LAST_30_DAYS AND campaign.campaign_id = CAMPAIGN_ID"
+    query="SELECT campaign.name, segments.auction_insight_domain, metrics.auction_insight_search_impression_share, metrics.auction_insight_search_overlap_rate, metrics.auction_insight_search_position_above_rate, metrics.auction_insight_search_top_impression_percentage, metrics.auction_insight_search_absolute_top_impression_percentage, metrics.auction_insight_search_outranking_share FROM campaign WHERE segments.date DURING LAST_30_DAYS AND campaign.id = CAMPAIGN_ID"
 )
 ```
 
