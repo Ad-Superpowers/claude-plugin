@@ -2,24 +2,37 @@
 
 All notable changes to the Ad Superpowers Claude plugin will be documented in this file.
 
+## [2.3.1] - 2026-08-28
+
+### Fixed
+
+- **Removed the stale "15 writes/hour per account" claim** from the
+  `meta-ad-launch-playbook` and `meta-media-upload-guide` skills. That invented
+  cap was removed from the server on 2026-06-16; writes are governed by Meta's
+  own documented rate model, which the server mirrors — batches need no
+  self-imposed pacing, and a throttled write returns an explicit error to back
+  off on. The matching MCP tool descriptions were corrected server-side in the
+  same change.
+
 ## [2.3.0] - 2026-08-07
 
 Minor bump for the tools added since 2.2.0, and for the source-claim corrections
-the release compiler blocks on. This release ships 50 MCP tools; the skill,
+the release compiler blocks on. This release ships 51 MCP tools; the skill,
 command and agent counts are unchanged.
 
 ### Added
 
-- **Ten MCP tools, 40 to 50.** `meta_ad_plan` and `meta_ad_execute` (the
+- **Eleven MCP tools, 40 to 51.** `meta_ad_plan` and `meta_ad_execute` (the
   plan-then-confirm route for a Meta ad change), `tiktok_manage`,
   `tiktok_upload`, `skill_update` and `workflow_update` (create and edit custom
   skills and workflows), and `linkedin_manage` (create, update, pause and delete
   LinkedIn campaign groups, campaigns and creatives, gated on a fail-closed
   EU political-advertising declaration), plus read-only
-  `merchant_list_accounts`, `merchant_query`, and `merchant_get_report`.
+  `merchant_list_accounts`, `merchant_query`, `merchant_get_report`, and
+  `workspace_info` for active-workspace and credential-binding visibility.
   Per-platform totals in
   `src/mcp/tool_counts.py` move from meta 12 to 14, TikTok 7 to 9, LinkedIn 4
-  to 5, Merchant Center 0 to 3, workflows 1 to 2 and skills 1 to 2. No tool
+  to 5, Merchant Center 0 to 3, workflows 1 to 3 and skills 1 to 2. No tool
   was removed or renamed.
 - **`tiktok_upload` puts an image or video into an advertiser's ad asset
   library** and returns the id an ad creative needs. Images go by base64 (max

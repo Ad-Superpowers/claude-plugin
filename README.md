@@ -2,7 +2,7 @@
 
 Manage, analyze, and optimize your ad campaigns across 8 platforms through natural language in Claude Code and Claude Desktop.
 
-**120 expert skills** · **35 slash commands** (29 workflow, 6 utility) · **5 specialized agents** · **50 MCP tools**
+**120 expert skills** · **35 slash commands** (29 workflow, 6 utility) · **5 specialized agents** · **51 MCP tools**
 
 ## Platforms
 
@@ -16,7 +16,7 @@ Manage, analyze, and optimize your ad campaigns across 8 platforms through natur
 | **Google Merchant Center** | 0 | 3 | Feed accounts, product issues, disapprovals ranked by click potential, shopping performance (read-only) |
 | **LinkedIn Ads** | 11 | 5 | B2B lead gen, ABM targeting, revenue attribution, Thought Leader Ads, CTV |
 | **TikTok Ads** | 10 | 9 | Creative fatigue, video performance, Smart+ campaigns, Search Ads, Shop |
-| **Cross-platform** | 17 | 6 | Unified `workflow`, `skill`, `skill_update`, `workflow_update`, `clients`, and `clients_update` tools; client profiles, attribution reconciliation, SEO vs SEA gaps, budget allocation, competitive analysis |
+| **Cross-platform** | 17 | 7 | Unified `workflow`, `workspace_info`, `skill`, `skill_update`, `workflow_update`, `clients`, and `clients_update` tools; client profiles, attribution reconciliation, SEO vs SEA gaps, budget allocation, competitive analysis |
 
 ## Install
 
@@ -165,7 +165,7 @@ No known limitations on 2.1.74+. All skills, commands, MCP tools, and subagents 
 |-----------|:---:|:---:|:---:|:---:|
 | 120 skills | ✅ | ✅ | ❌ | ❌ |
 | 35 commands | ✅ | ✅ | ❌ | ❌ |
-| 50 MCP tools | ✅ | ✅ | ✅ | ✅ |
+| 51 MCP tools | ✅ | ✅ | ✅ | ✅ |
 | 5 subagents | ✅ | ❌ (use skills instead) | ❌ | ❌ |
 
 ## Paid early access

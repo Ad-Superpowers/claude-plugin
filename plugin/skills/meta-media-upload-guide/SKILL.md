@@ -552,8 +552,8 @@ Dynamic Creative is a different thing: an ad set created with `is_dynamic_creati
 2. Claude: meta_query(account_id, "adimages", limit=250)
 3. Claude groups by aspect_ratio_bucket, cross-references filenames via
    the Filename Matching rules, picks per placement, builds ads
-   (one meta_create_ad per ad — NOT in a tight loop, the 15-writes-per-hour
-   throttle will trigger).
+   (one meta_create_ad per ad, run sequentially — the server mirrors Meta's
+   rate limits; if Meta throttles, the error says so).
 ```
 
 ## Integration Points
@@ -571,4 +571,4 @@ Dynamic Creative is a different thing: an ad set created with `is_dynamic_creati
 - `meta-creative-diversification-generator` — plan the creative matrix first, then use this skill per concept
 - `meta-video-script-writer` — script the video first, then host the rendered file
 
-**Account integrity reminder:** every `meta_create_ad` call is a write. The protection stack caps you at **15 writes per hour per ad account**. For a bulk flow with 50 creatives, pace the calls (10-15 per hour, spread over 4-5 hours).
+**Account integrity reminder:** every `meta_create_ad` call is a write. The server's protection stack mirrors Meta's documented rate model and backs off on Meta's throttle signals — there is **no artificial hourly cap**, so a bulk flow needs no self-imposed pacing. If a call returns a throttle error, back off and resume where you left off.
